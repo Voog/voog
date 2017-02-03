@@ -1,4 +1,4 @@
-# Voog/voog
+# Issue tracker and wiki for Voog CMS developers
 
 This repository has multiple purposes:
 
@@ -12,3 +12,9 @@ When submitting a new issue or a feature request, there are a few steps you shou
 
 * Look through the current list and see if yours might be a duplicate, in which case you should comment on the original thread instead.
 * Try to fill out our issue template. We appreciate any relevant information that might assist us solving the problem or implementing the feature. Also don't forget to add a relevant "bug" or "feature" label to the created issue.
+
+## Useful links
+
+[voog.com/developers](www.voog.com/developers)
+
+[voog.com/support](www.voog.com/support)
