@@ -1,4 +1,4 @@
-# Issue tracker and wiki for Voog CMS developers
+# Issue tracker and wiki for [Voog CMS](https://www.voog.com) developers
 
 This repository has multiple purposes:
 
@@ -15,6 +15,6 @@ When submitting a new issue or a feature request, there are a few steps you shou
 
 ## Useful links
 
-[voog.com/developers](www.voog.com/developers)
+[voog.com/developers](https://www.voog.com/developers)
 
-[voog.com/support](www.voog.com/support)
+[voog.com/support](https://www.voog.com/support)
