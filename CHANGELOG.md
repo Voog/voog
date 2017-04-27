@@ -1,5 +1,34 @@
 # Changelog
 
+## 2017-04-26
+* API: Allow adding Languages with custom codes ('eu', 'gb' etc.)
+* API: Allow creating elements by `element_definition_title` instead of id
+* Ecommerce: Fix terms and services link in shopping cart
+* Ecommerce: Properly remove deleted products from products list (Voog/voog#5)
+* Ecommerce: Orders view style improvements
+* Ecommerce: Support both `language` and `language_code` parameters for API requests
+* Ecommerce: Set default country code when creating a new store
+* Ecommerce: Hide shipping method details when there are no description and options defined
+* Ecommerce: Add status field to product list view
+* Ecommerce: Add `tax_rate` field to all Product API responses
+* Ecommerce: Add new public methods to global JS objects:
+  * `Voog.buyButtonsManager`: `refreshSelectedVariants` ,`setState` ,`setPrice` ,`setPickedVariants`
+  * `Voog.ShoppingCart`: `addProductById`
+* Visual improvements to draggable elements
+* Social media icon improvements:
+  * option to open links in a new tab
+  * better support for small screens
+  * fix FB share button
+* Other minor tweaks and fixes
+
+## 2017-04-13
+* Ecommerce: Visual tweaks and fixes to product and settings views
+* Ecommerce: Buy button tweaks in editmode
+* Ecommerce: Limit total count of enabled product variants to 200
+* Ecommerce: Visual tweaks to buy button and its settings popover
+* Ecommerce: Check product availability before submitting shopping cart
+* Other minor tweaks and fixes
+
 ## 2017-03-30
 * Support variables as parameter values in custom Liquid tags (`elementscontext`, `blogcontext`, `content`, `contentblock`, `xcontent`)
 * Changed element filtering `$match`, `$starts` and `$end` filters to be case insensitive
