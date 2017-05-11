@@ -1,5 +1,20 @@
 # Changelog
 
+## 2017-05-10
+* Ecommerce: Behaviour tweaks for variant editor in product details view
+* Ecommerce: Visual tweaks in variant list component in product details view
+* Ecommerce: Minor bugfixes and tweaks
+* Ecommerce: Updated API documentation [/developers/api/ecommerce/carts](https://www.voog.com/developers/api/ecommerce/carts)
+* Ecommerce: Visual fixes to translation modal in store settings view
+* Liquid: Limit actual size of extremely long `articles` arrays (affects only the default `articles` variable)
+* Update domain pricing and add some new domains (ch, cn, es, io, nu, se, vc, xyz)
+* Fixed text editor 'justify' behaviour
+* Fixed problematic search behaviour for uploaded images with incorrect mime types
+* Added new events to shopping cart: [/developers/scripting/ecommerce/shopping-cart](https://www.voog.com/developers/scripting/ecommerce/shopping-cart)
+* Changed all form labels to allow unescaped HTML as contents
+* Minor tweaks to intro tour
+* Popover positioning tweaks
+
 ## 2017-04-26
 * API: Allow adding Languages with custom codes ('eu', 'gb' etc.)
 * API: Allow creating elements by `element_definition_title` instead of id
