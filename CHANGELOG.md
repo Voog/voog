@@ -1,5 +1,103 @@
 # Changelog
 
+## 2017-09-15
+
+* Ecommerce: Prevent showing "out of stock" badge when stock is actually unlimited
+* Elements: Allow removing belongs_to references for related elements
+* Fixed sorting of SSL certificates
+* Other minor tweaks and fixes
+
+## 2017-09-13
+
+* Ecommerce: Fixed disabling product variants
+* Ecommerce: Improved plan-based product limits and relevant error messages
+* Liquid: Unify `Element`  object attributes and `to_json` output
+  * Add `path` and `path_with_page` to `Element`object
+  * Add `url` and `model_name` to `Element` object `to_json` output
+* Don't trim whitespace from PlainTextEditor contents on initialization
+* API: Improved API cache cleaning in inventory management context
+* Fixed JS error in edit mode caused by Chrome v61 update
+* Other minor tweaks and fixes
+
+## 2017-09-05
+
+* Ecommerce: Implement basic inventory management
+* Improved SSL certificates view and custom certificate upload form
+* Allow removing Voog footer from store invoices (on request)
+* Various visual tweaks
+* Other minor tweaks and fixes
+
+## 2017-08-17
+
+* Ecommerce: Improved ordering in transactions report view
+* Ecommerce: Translation modal improvements
+* Ecommerce: Fix shipping method availability dropdown
+* Added domain redirect info to domain list
+* Visual tweaks in domain views
+* Live chat improvements
+* Other minor tweaks and fixes
+
+## 2017-08-14
+
+* Improved behaviour for the 'force SSL' dropdown in domain settings view
+* Disable redirecting domain while the Let's Encrypt validation is still pending
+* Other minor tweaks and fixes
+
+## 2017-08-09
+
+* Thoroughly updated all domain views and added SSL security view
+* Ecommerce: visual tweaks
+* Various visual fixes
+* Other minor tweaks and fixes
+
+## 2017-07-21
+
+* Ecommerce: Implement importing product variant types from other products
+* Ecommerce: Improved transaction report views
+* Support Let's Encrypt verification requests
+* Display "pointer" cursor on gallery items in public mode
+* Enable translating buy buttons and store settings in editmode modals
+* Other minor tweaks and fixes
+
+## 2017-07-17
+
+* Ecommerce: Enable ecommerce in all plans (with transaction fee in some plans)
+* Ecommerce: Fixed adding new shipping methods
+* Added information about SSL certificates to plans view
+
+## 2017-07-10
+
+* Added live chat with customer support
+* API: Improved Elements caching
+* API: Allow posting arrays as element values
+* Ecommerce: Added `paid_at` field to Orders
+
+## 2017-06-22
+
+* Improved site language autodetection fallbacks
+* API: Fixed issue where `image_id` was rejected from Page create request
+* removed pages under hidden languages from sitemap.xml
+* Ecommerce: Added XLS and CSV exports for Orders
+* Ecommerce: Add (optional) terms and services agreement checkbox to the shopping cart.
+* Ecommerce: product list view improvements
+
+## 2017-06-07
+
+* Ecommerce: Add "translate" button and tooltips to product view
+* Ecommerce: Translate product statuses in products list
+* Liquid: Fixed scoping issue with `reorder` and `assign`
+* Other minor tweaks and fixes
+
+## 2017-05-24
+
+* Ecommerce: Visual improvements for the product view
+* Ecommerce: Add support for new payment methods: `liisi_ee`, `saastopankki`, `spankki` and `tapiola`.
+* Ecommerce: Minor bugfixes for store address fields
+* Fixed uploading assets on IDNA domains (IE)
+* Fixed text editor toolbar to the top of the viewport
+* Fixed signup link in sites management menu
+* Other minor tweaks and fixes
+
 ## 2017-05-10
 * Ecommerce: Behaviour tweaks for variant editor in product details view
 * Ecommerce: Visual tweaks in variant list component in product details view
