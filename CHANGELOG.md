@@ -1,5 +1,33 @@
 # Changelog
 
+## 2017-10-11
+
+* Liquid: Add `json_parse` filter:
+```  {% assign json_result = '{"foo":{"bar":[1,2,3]}}' | json_parse %}
+  
+  Result: {{ json_result.foo.bar.last }}<br>
+  
+  {% for el in json_result.foo.bar %}
+    {{ el }}<br>
+  {% endfor %}
+```
+* Liquid: Add support for array filters like `push`, `pop`, `shift` and `unshift`
+* Liquid: Upgraded Liquid to latest stable version (v4.0.0)
+  * Support Range Type (`{{ assign nums = (x..y) }}`)([Shopify/liquid#761](https://github.com/Shopify/liquid#761))
+  * Add whitespace control characters (`{{-` and `{%-`) ([Shopify/liquid#773](https://github.com/Shopify/liquid#773))
+* Other minor tweaks and fixes
+
+## 2017-09-27
+
+* Ecommerce: XLS and CSV export for products
+* Ecommerce: Improved rendering for multi-pate PDF invoices
+* Ecommerce: improved admin mobile views
+* API: Add `parent_id` and `parent_type` as aliases for content partial's `page_id` and `page_type`
+* Updated BuyButton API docs
+* Allow site editors to delete other editors
+* Add IDNA support for free domain names (e.g. "õäöü.voog.com")
+* Other minor tweaks and fixes
+
 ## 2017-09-15
 
 * Ecommerce: Prevent showing "out of stock" badge when stock is actually unlimited
