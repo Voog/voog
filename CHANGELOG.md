@@ -1,5 +1,23 @@
 # Changelog
 
+## 2017-10-26
+
+* SEO: Add alternate language (`rel="alternate"`) links to sitemap.xml. [Read more](https://support.google.com/webmasters/answer/2620865).
+* SEO: Allow sites photos/files to be indexed by search engines by default on Voog media host (media.voog.com)
+* Liquid: New Liquid tag `sd_breadcrumbs` for generating JSON-LD breadcrumbs. [Read more](https://developers.google.com/search/docs/data-types/breadcrumbs). Usage:
+
+```
+{% sd_breadcrumbs %}
+=> <script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://test.voog.com/en","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"http://test.voog.com/contact","name":"Contact"}}]}</script>
+```
+* API: Add `updater` attributes to [Layout](https://www.voog.com/developers/api/resources/layouts) and [LayoutAssets](https://www.voog.com/developers/api/resources/layout_assets) API responses
+* API: Password-protected resources are now accessible for logged-in users
+* Render custom error layouts only if site actively uses a custom design
+* Allow IP addresses for link-type menu item destinations
+* Various performance improvements
+* Various visual improvements
+* Other minor tweaks and fixes
+
 ## 2017-10-11
 
 * Liquid: Add `json_parse` filter:
