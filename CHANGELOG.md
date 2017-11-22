@@ -1,5 +1,37 @@
 # Changelog
 
+## 2017-11-22
+
+* Liquid: Support `readonly=true` attribute in `content` and `contentblock` tags. [Read more](https://www.voog.com/developers/markup/tags/content#readonly). Example:
+
+```
+<div class="banner-area">{% content name="banner-area" readonly=editmode %}</div>
+{% if editmode %}<div class="banner-area-edit-mode">{% content name="banner-area" %}</div>{% endif %}
+```
+
+* Liquid: Support objects in `bind` attribute for `content` and content block tags. Suuported objects: `Article`, `Element`, `Language` and `Element`. [Read more](https://www.voog.com/developers/markup/tags/content#bind). Example:
+```
+{% elementscontext q.element.values.category.$in="Books" s="element.values.date.$asc" %}
+  {% for el in elements %}
+    <a href="{{ el.url }}">{{ el.title }}</a>
+    <div class="gallery">{% content name="content-gallery" bind=el %}</div>
+  {% endfor %}
+{% endelementscontext %}
+```
+
+```
+{% for lang in site.languages %}
+  {% if lang.code == "en" %}
+    {% content name="banner" bind=lang %}
+  {% endif %}
+{% endfor %}
+```
+
+* Liquid: Fixed issue where new fields couldn't be added to element definitions that had only element relations defined
+* Liquid: Fixed `reorder` and `group` tags to also work with `article.title`.
+* SettingsEditor: Add new types: `number`, `range`, `text` and `textarea` [Read more](https://www.voog.com/developers/scripting/javascripts/settings-editor).
+* Ecommerce: Fix invoice value date not displaying the correct value in the store settings view
+
 ## 2017-10-26
 
 * SEO: Add alternate language (`rel="alternate"`) links to sitemap.xml. [Read more](https://support.google.com/webmasters/answer/2620865).
