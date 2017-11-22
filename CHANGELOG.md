@@ -9,7 +9,7 @@
 {% if editmode %}<div class="banner-area-edit-mode">{% content name="banner-area" %}</div>{% endif %}
 ```
 
-* Liquid: Support objects in `bind` attribute for `content` and content block tags. Suuported objects: `Article`, `Element`, `Language` and `Element`. [Read more](https://www.voog.com/developers/markup/tags/content#bind). Example:
+* Liquid: Support objects in `bind` attribute for `content` and content block tags. Suuported objects: `Article`, `Element`, `Language` and `Page`. [Read more](https://www.voog.com/developers/markup/tags/content#bind). Example:
 ```
 {% elementscontext q.element.values.category.$in="Books" s="element.values.date.$asc" %}
   {% for el in elements %}
