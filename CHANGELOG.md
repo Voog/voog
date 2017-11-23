@@ -1,5 +1,11 @@
 # Changelog
 
+# 2017-11-23
+
+* Liquid: Fixed issue where `{{ elements | json }}` fails.
+* Liquid: json filter now returns same object files for array of liquid objects (like `{{ elements | json }}`) and single object `{{ elements | json }}`. Fixes issue where in some case internal object attributes was present in json output.
+* Liquid: Fixed issue where `{{ site.latest_articles | json }}` raises error.
+
 ## 2017-11-22
 
 * Liquid: Support `readonly=true` attribute in `content` and `contentblock` tags. [Read more](https://www.voog.com/developers/markup/tags/content#readonly). Example:
