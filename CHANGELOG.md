@@ -58,8 +58,9 @@
 
 ## 2017-10-11
 
-* Liquid: Add `json_parse` filter:
-```  {% assign json_result = '{"foo":{"bar":[1,2,3]}}' | json_parse %}
+* Liquid: Add `json_parse` filter ([read more](https://www.voog.com/developers/markup/basics/filters#json_parse):
+```
+{% assign json_result = '{"foo":{"bar":[1,2,3]}}' | json_parse %}
   
   Result: {{ json_result.foo.bar.last }}<br>
   
@@ -67,7 +68,7 @@
     {{ el }}<br>
   {% endfor %}
 ```
-* Liquid: Add support for array filters like `push`, `pop`, `shift` and `unshift`
+* Liquid: Add support for array filters like `push`, `pop`, `shift` and `unshift`. [Read more](https://www.voog.com/developers/markup/basics/filters#array-filters).
 * Liquid: Upgraded Liquid to latest stable version (v4.0.0)
   * Support Range Type (`{{ assign nums = (x..y) }}`)([Shopify/liquid#761](https://github.com/Shopify/liquid#761))
   * Add whitespace control characters (`{{-` and `{%-`) ([Shopify/liquid#773](https://github.com/Shopify/liquid#773))
