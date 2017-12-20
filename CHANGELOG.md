@@ -1,6 +1,11 @@
 # Changelog
 
-# 2017-11-23
+## 2017-12-19
+
+* Ecommerce: Implement discounts. [Read more](https://www.voog.com/developers/api/ecommerce/discounts)
+* Fixed bug with changing months in catalog tool datepicker ([#1](https://github.com/Voog/voog/issues/1))
+
+## 2017-11-23
 
 * Liquid: Fixed issue where `{{ elements | json }}` fails.
 * Liquid: json filter now returns same object files for array of liquid objects (like `{{ elements | json }}`) and single object `{{ elements | json }}`. Fixes issue where in some case internal object attributes was present in json output.
