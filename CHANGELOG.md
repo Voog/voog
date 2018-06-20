@@ -1,5 +1,110 @@
 # Changelog
 
+## 2018-06-20
+
+- Include articles and elements when duplicating the front page
+- Referral view bug fixes
+- Various cosmetic and UX tweaks to admin views and editmode widgets
+- Leave site structure uncollapsed when duplicating a subpage
+- Update robots.txt parsing rules on site indexing
+- Fix embedded content block to make the inserted content editable
+- Updated embedded content parsing rules when calculating iframe width
+- Updated embedded content parsing rules to accept comments and textnodes as we
+- Hide page settings modal when deleting the page from the Structure view
+- Fix form button to show its custom submit text
+- Fix wall-type gallery rendering
+- Add visual feedback to the save button to reflect the unsaved and saving states
+- Blacklist the Unicode control characters (`U+2028` and `U+2029`) in the text editor
+- Use modal to add articles from blogs admin view
+- Ecommerce: Add pagination to Order list and Product list views
+- Ecommerce: Add pagination to Order and Product API
+- Ecommerce: Show translated values in the product view in the current language context
+- Liquid: Update the addbutton tag to accept variable parameters:
+
+```
+{% addbutton page_id=element.page_id element_type=element.model_name %}
+```
+
+```
+{% blogcontext "my_blog" %}
+  {% addbutton page_id=blog.page.id %}
+{% endblogcontext %}
+```
+- API: Fixed Assets API to take current protocol into account when returning the upload URL
+
+## 2018-06-12
+
+- Fixed bug with changing the current design template right after signing up
+
+## 2018-06-07
+
+- Allow adding custom classes to forms
+- Cosmetic tweaks to various modals
+- Ecommerce: Fixed "translate" button in ecommerce views to properly open the translation modal
+- API: Remember the last customized design template name and customization timestamp, accessible via /admin/api/site
+- API: List `offline` payment gateway in Ecommerce Gateways API
+- API: Allow to disable `offline` payment gateway
+- API: Support sorting by product translated values when a language context is given
+
+## 2018-05-25
+
+- Update Tell A Friend referral URLs
+- GDPR-related additions — terms acceptance/marketing consent modals etc.
+
+## 2018-05-02
+
+- Remove deprecation warning from components using Google Maps
+- Fixed form ticket checkbox rendering
+
+## 2018-04-25
+
+- Fix social media widget
+- Ecommerce: support using the `order.note` field both in the shopping cart and in the Order view
+- Ecommerce: various UX improvements
+- Ecommerce: Visual twaks to required fields in the shopping cart
+
+## 2018-04-11
+
+CMS:
+
+- Fixed page settings modal to properly handle unsuccessful updates
+- Fixed account expiration email rendering
+
+## 2018-03-23
+
+CMS:
+
+- Updated refer view copy
+- Ecommerce: Fixed shipping cost calculation in the shopping cart
+- Ecommerce: Fixed a rounding bug that caused failing checkouts in some cases
+- Ecommerce: Tweaked variant selection in the Product view
+
+## 2018-03-21
+
+- Prevent multiple 301 redirects when the domain is set to prefer the www form
+- Fixed bug with the "all time" filter in the statistics view
+- Fixed custom 404 page rendering with no visible languages
+
+## 2018-03-01
+
+- Liquid: Added `sign_out` key to [translations](https://www.voog.com/developers/markup/basics/i18n)
+
+## 2018-02-02
+
+- Ecommerce: Fixed store creation for Standard and Plus plan editors
+
+## 2018-01-29
+
+- Prevent domain redirect loops
+- Ecommerce: changed offline payment receiver to company name instead of store name
+- Ecommerce: fixed Product caching issues
+
+## 2017-12-22
+
+- Ecommerce: Fix some discount-related texts in emails and on invoices
+- Ecommerce: Improve multi-page invoices
+- Ecommerce: Allow unicode characters in discount codes
+
 ## 2017-12-19
 
 * Ecommerce: Implement discounts. [Read more](https://www.voog.com/developers/api/ecommerce/discounts)
