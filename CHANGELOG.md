@@ -1,5 +1,19 @@
 # Changelog
 
+## 2018-07-06
+
+- Update Image Drop Area widget to support relative positioning
+- Update text area parser rules
+- Use modal to add new articles on /admin/content/articles?blog=ID pages
+- UX improvements in the /admin/stats/sources view
+- Minor UX improvements to the form editor
+- Correct calculations in /admin/stats/sources view
+- Liquid: Update `addbutton` tag to work inside `blogcontext` blocks
+- Ecommerce: Cosmetic improvements to the pagination components
+- Ecommerce: Update payment methods view to link to relevant articles
+- Ecommerce: Fix adding discounts to specific products
+- Ecommerce API: Add `sku` to CartItem API response
+
 ## 2018-06-20
 
 - Include articles and elements when duplicating the front page
