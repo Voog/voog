@@ -1,5 +1,14 @@
 # Changelog
 
+## 2018-07-19
+- Ecommerce: Product variant values are now properly translatable
+- Ecommerce: Add a link to the store settings view to the settings menu
+- Liquid: Add the `invisible` parameter to the `content` tag to create content areas without visible placeholders:
+  - `{% content invisible="true" %}`
+- API: Add ?include_body=true parameter to the Layouts API index request
+- Warn the user if they're trying to delete or hide the last visible language on their site
+- UX improvements in the domain security view
+
 ## 2018-07-06
 
 - Update Image Drop Area widget to support relative positioning
