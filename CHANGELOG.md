@@ -1,5 +1,49 @@
 # Changelog
 
+## 2018-08-15
+
+* Liquid: `load` tag improvements ([see more](https://www.voog.com/developers/markup/tags/load)):
+  * Support variables in attributes
+  * Support [query filtering](https://www.voog.com/developers/api/basics/filters) syntax like in [Voog API](https://www.voog.com/developers/api)
+  * Add alias types `media_set` and `media_sets` for legacy types `mediaset` and `mediasets`.
+  * Add support to new load types: `article` (load [Article object](https://www.voog.com/developers/markup/objects/article)) and `articles` (loads array of Article objects).
+  * Add attribute `limit` to limit objects loaded by `media_sets` and `articles` type.
+  * Examples:
+
+Legacy syntax (media sets only):
+  
+```
+{% load mediaset to "my_gallery" title="Foobar" %}
+```
+
+New syntax:
+
+ ``` 
+{% load media_set to "my_set" q.media_set.title.$eq="Foobar" %}
+{% load article to "my_article" q.article.title.$eq="Foobar" %}
+{% load articles to "my_articles" q.page.id=page.id limit=10 %}
+ ```
+* Ecommerce: Add filter to products admin view.
+  
+
+## 2018-08-08
+
+* Improve elements and element relation-related performance
+* Fixed issue with newly provisioned SSL certificate always showing "waiting" status
+* Updated copy of the tell-a-friend email
+
+## 2018-08-01
+
+* Liquid: Support "invisible" flag in content area. Area with this flag is invisible until it shows drop place holder when user starts to drag some content area. Example:
+```
+{% content name=""invisible-content-area" invisible=true %}
+```
+* Fix catalogue element drag placeholder position in admin view
+* Improve domain expiration notifications in admin domains view
+* Fixed S3 "cache-control" value for thumbs and static.voog.com lib files
+* Set static.voog.com lib assets cache "max-age" value to 1 year for versioned files and 1 day for "latest".
+* Use versioned url for injected "picturefill.js" file url
+
 ## 2018-07-19
 - Ecommerce: Product variant values are now properly translatable
 - Ecommerce: Add a link to the store settings view to the settings menu
