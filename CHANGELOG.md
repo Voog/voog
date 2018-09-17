@@ -1,5 +1,22 @@
 # Changelog
 
+## 2018-09-12
+
+* Add delete button to text area and image toolbars
+* Add unique `X-Entity-Ref-ID` SMTP header to form ticket emails to prevent threading in Gmail
+* Use human-readable Unicode domain name in admin view title bars
+* Improve browser-side favicon caching
+* Ecommerce: Fixed discount calculation for fixed values (cart and cart with shipping discounts)
+* Ecommerce: Update customer payment confirmation email copy
+
+## 2018-08-29
+ 
+* Display data usage as percent in assets view
+* Force global match in file picker filter
+* Allow trial plan user to select a plan when buying domains
+* Improved elements reordering performance
+* Ecommerce: Add alignment dropdown to the buy button toolbar
+
 ## 2018-08-15
 
 * Liquid: `load` tag improvements ([see more](https://www.voog.com/developers/markup/tags/load)):
