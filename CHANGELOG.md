@@ -1,5 +1,38 @@
 # Changelog
 
+**2018-10-24**
+
+* Add `region` field (e.g. `GB`) to language object (accessible via liquid)
+* Liquid: Add `region` and `locale` to `Language` object ([read more](https://www.voog.com/developers/markup/objects/language))
+* Liquid: Add `language_region` and `language_locale` to `Page` object ([read more](https://www.voog.com/developers/markup/objects/page))
+* Ecommerce: Display descriptive low stock error messages in shopping cart
+* Ecommerce: Add information about shipping address to order emails
+* Ecommerce: Improved number input format in store admin views
+* Ecommerce: Fixed Nordea bank logo for Finnish customers in cart
+* Show full asset name in file panel
+* Close "Add" and "Files" panel when user clicks on menubar
+* Add toggle type indicators to design editor
+* Fixed issue where user invite emails was always sent out in English
+* Do not redirect pages with `page.permanent_redirect_url` value in edit and preview mode.
+* Add GDPR DPA link to user profile view
+* Improved edicy-tools widgets stability
+
+**2018-10-17**
+
+* Ecommerce: Allow store management (including API access) always when ecommerce feature is enabled in plan
+* Fixed datepicker wrong month value
+
+**2018-10-12**
+
+* Ecommerce: Add default filtering for archived orders
+* Improved application stability
+* Other minor tweaks and fixes
+
+**2018-09-28**
+
+* Improved assets related thumbnails preloading performance
+* Add `minWidth` and `minHeight` options to gallery lightbox
+
 ## 2018-09-12
 
 * Add delete button to text area and image toolbars
