@@ -1,6 +1,20 @@
 # Changelog
 
-**2018-10-24**
+## 2018-11-08
+
+* Fixed OG image url scheme for API https request responses (Article, Page, MediaSets)
+* Improved caching in elements API listing response
+* Fixed issue where `og:url` domain in public views doesn't always match with request domain name
+* Fixed site cache swiping on elements reordering and page duplication
+* Give immediate feedback about loading the page settings modal
+* Fix double languages in structure view
+* Fixed language publishing toggle
+* Image drop area plugin: Fixed plugin to work correctly with `positionable` attribute (https://github.com/Voog/voog/issues/14)
+* Settings Editor plugin : Add tooltips support ([read more](https://www.voog.com/developers/scripting/javascripts/settings-editor))
+* Settings Editor plugin: Add toggle as item type ([read more](https://www.voog.com/developers/scripting/javascripts/settings-editor))
+* Other minor tweaks and fixes
+
+## 2018-10-24
 
 * Add `region` field (e.g. `GB`) to language object (accessible via liquid)
 * Liquid: Add `region` and `locale` to `Language` object ([read more](https://www.voog.com/developers/markup/objects/language))
@@ -17,18 +31,18 @@
 * Add GDPR DPA link to user profile view
 * Improved edicy-tools widgets stability
 
-**2018-10-17**
+## 2018-10-17
 
 * Ecommerce: Allow store management (including API access) always when ecommerce feature is enabled in plan
 * Fixed datepicker wrong month value
 
-**2018-10-12**
+## 2018-10-12
 
 * Ecommerce: Add default filtering for archived orders
 * Improved application stability
 * Other minor tweaks and fixes
 
-**2018-09-28**
+## 2018-09-28
 
 * Improved assets related thumbnails preloading performance
 * Add `minWidth` and `minHeight` options to gallery lightbox
