@@ -1,5 +1,34 @@
 # Changelog
 
+## 2018-12-19
+
+* Ecommerce: Fixed large buy button (with price) rendering in mobile views.
+* Add HTTP `X-Robots-Tag` support for pages and articles. Allow to set `robots_header` value with Page and Article API.
+* Liquid: Support `tag` filter attribute in article `load` tag like in Articles API. [Read more](https://www.voog.com/developers/markup/tags/load#load_tag).
+* Liquid: Add `published?` method to Liquid `Article` drop. [Read more](https://www.voog.com/developers/markup/objects/article#article_published).
+* Updates for Voog support chat.
+
+## 2018-12-11
+
+* New Voog support chat.
+
+## 2018-12-06
+
+* Improve elements filter related query performance.
+* Ecommerce: Minor ShoppingCart code improvements.
+* Sanitize `undefinded` to `null` in page/article custom data values (`Edicy.articles.currentArticle.setData(key, value)` and `Edicy.CustomData.set`).
+
+## 2018-11-21
+
+* Ecommerce: Fixed issue where `order.items_original_amount` wasn't sometimes rounded correctly.
+* Ecommerce: Fixed issue where order cancelled email was sent to shop owner in case of MakeCommerce transaction initialization and pending events..
+* EdicyTools: Replace throw statement with console.error.
+* Fixes save button feedback in elements admin view.
+
+## 2018-11-13
+* Cache `/favicon.ico` 404 response for 1 hour.
+* Ecommerce: Improved buy button rendering.
+
 ## 2018-11-08
 
 * Fixed OG image url scheme for API https request responses (Article, Page, MediaSets)
