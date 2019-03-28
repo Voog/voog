@@ -1,5 +1,48 @@
 # Changelog
 
+## 2019-03-27
+
+* Allow site editors to manage domain settings (except adding, removing and DNS management) and SSL certificates.
+* Liquid: Add `position`, `created_at` and `updated_at` attributes in ElementDrop ([read more](https://www.voog.com/developers/markup/objects/element)).
+* Render empty `sitemap.xml` response (with status 403) for suspended websites.
+
+## 2019-03-15
+
+* Ecomerce: Add payment gateway management interfaces (PayPal, MakeCommerce, offline invoice).
+* General improvements in admin views.
+
+## 2019-03-01
+
+* Update domain price list.
+* Improved site asset search when filename contains `.`.
+
+## 2019-02-13
+
+* Add timezone information to form ticket email.
+* Add direct link from single ticket view to the related form listing.
+* Add missing form file input field data to CSV export file.
+* Liquid: Add accessibility related texts to translations ([read more](https://www.voog.com/developers/markup/basics/i18n#built-in-translations)).
+* Ecommerce API: Fixed missing product object in BuyButton API.
+* Ecommerce: Use Voog e-mail in the FROM field of ecommerce customer e-mails.
+* Improved referrer code handling on signup.
+
+## 2019-01-30
+
+* Fixed Voog internal site indexing for nested structures (e.g. tables).
+* Ecommerce: Added custom event for shopping cart shipping methods (`voog:shoppingcart:showshippingmethods`) ([read more](https://www.voog.com/developers/scripting/ecommerce/shopping-cart)).
+* Ecommerce: Allow editor to re-enable the ecommerce module if allowed by the subscription plan (Premium).
+
+## 2019-01-16
+
+* Ecommerce: Orders export (XLS, CSV) now outputs all orders (instead of 50 latest)
+* Other minor tweaks and fixes
+
+## 2019-01-03
+
+* Support IPv6 in form ticket data
+* Ecommerce: Improve BuyButton rendering in edit mode
+* Fixed checkbox label padding for settings editor
+
 ## 2018-12-19
 
 * Ecommerce: Fixed large buy button (with price) rendering in mobile views.
