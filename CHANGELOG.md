@@ -1,5 +1,44 @@
 # Changelog
 
+## 2019-07-04
+
+* Add `menu_title` to the Page object. It's now possible to set a separate `page.menu_title` to display a different title in the menu, as opposed to the `<title>` tag. [`menuitem.title`](https://www.voog.com/developers/markup/objects/menu-item#menuitem_title) now returns `page.menu_title` when present, with fallback to `page.title`. The `menu_title` value can be updated over the [Page API](https://www.voog.com/developers/api/resources/pages).
+* Support for `<title>` tag formatting (Site, Page and Article objects) used by the new [`title` Liquid tag](https://www.voog.com/developers/markup/tags/title). [`title_format`](https://www.voog.com/developers/markup/objects/page#page_title_format) and [`title_separator`](https://www.voog.com/developers/markup/objects/page#page_title_separator) values can be set over the API.
+* Liquid: Add the [`title`](https://www.voog.com/developers/markup/tags/title) tag. Usage `<title>{% title %}</title>`. The tag uses Page / Article `title_format` and `title_separator` values with fallback to site level values (and system defaults). [Read more](https://www.voog.com/developers/markup/tags/title).
+* Liquid: New fields for [Article](https://www.voog.com/developers/markup/objects/article): `full_title`, `title_separator`, `title_separator_value`, `title_format`, `title_format_pattern`.
+* Liquid: New fields for [Page](https://www.voog.com/developers/markup/objects/page): `menu_title`, `full_title`, `title_separator`, `title_separator_value`, `title_format`, `title_format_pattern`.
+* Liquid: New fields for [Site](https://www.voog.com/developers/markup/objects/site): `title_separator`, `title_separator_value`, `title_format`, `title_format_pattern`.
+* API: Allow updating custom `robots.txt` content over the [Site API](https://www.voog.com/developers/api/resources/site).
+* Support site level `robots_header` value. Can be set over the [Site API](https://www.voog.com/developers/api/resources/site). If set, any page level `robots_header` value is ignored.
+* Add SEO metrics to [Pages](https://www.voog.com/developers/api/resources/pages) and [Articles](https://www.voog.com/developers/api/resources/articles) API-s.
+* Preparation for August 1st release. [Read more in the blog](https://www.voog.com/blog/coming-soon-seo-tools-more-space-updated-subscription-plans).
+
+## 2019-05-31
+
+* Update TOS acceptances
+* Include article image links in RSS feeds (`item.enclosure`)
+
+## 2019-05-22
+
+* Ecommerce: Fixed issue where stock notification email was sent too early
+* General improvements
+
+## 2019-05-10
+
+* Fixed TOS acceptances modal rendering
+* General improvements
+
+## 2019-05-08
+
+* Do not show "next" and "prev" buttons if slider has only 1 photo
+* Liquid: Make `menuitem.page.description` accessible when menu items are loaded with the `_with_data` suffix 
+* Improve UI/UX of invoices and subscriptions admin views
+* General improvements in admin views
+
+## 2019-04-09
+
+* Add support for inline elements in [custom text format](https://www.voog.com/developers/scripting/page-configuration/adding-a-text-format)
+
 ## 2019-03-27
 
 * Allow site editors to manage domain settings (except adding, removing and DNS management) and SSL certificates.
