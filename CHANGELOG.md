@@ -1,5 +1,89 @@
 # Changelog
 
+## 2019-10-01
+
+* Fixed issue where the page settings dialog always displayed "public" as password protected state
+* Fixed image picker for file names with special characters
+
+## 2019-09-27
+
+* New and improved image picker for OG image in the page settings dialog
+* Fixed bugs in SEO dashboard views and improved performance
+* Fixed SEO views for the case where all site languages are deleted
+* Improved page and redirects settings modal dialogs
+* Show subscription plan's recurring date in account plans view
+
+## 2019-09-16
+
+* Fixed: clean redirect rules cache on redirect rule change
+* General improvements
+
+## 2019-09-13
+
+* Improved BuyButton rendering performance for products with variants
+
+## 2019-09-12
+
+* New SEO Redirect rules management view
+* Added query string support for redirect rules (regex match only)
+* Fixed FB icon click in social content area
+* Improved SEO Pages upsell
+* Added title formatting override tools to page settings dialog SEO tab
+* General improvements
+
+## 2019-09-09
+
+* New password protected page user management popup in page settings dialog
+* Added a descriptive label to page settings OG image input
+* Improved content area management tools
+* Ecommerce: Fixed email validation for long (> 3 chars) TLDs
+* General improvements
+
+## 2019-08-26
+
+* Fixed form editor input activation in edit mode
+
+## 2019-08-22
+
+* Improved interactions of empty content area's "Add content" panel UI elements
+* Fixed layout selector in the page settings dialog if there are more than 50 layouts
+* Fixed private / public flag saving in page settings dialog
+* API: Support `isprivate` as alias for `privacy` in Pages API
+* General improvements
+
+## 2019-08-16
+
+* API: New Page API [duplicate endpoint](https://www.voog.com/developers/api/resources/pages#duplicate_page)
+* Added page duplication to the new page settings dialog
+* Fixed sub-page path renaming via Page API
+* Fixed saving the Google Search Console field
+* Fixed page URL in Google search result previews
+* Fixed SEO General view's language context change
+* Fixed issue where external CSS overrides "Add content area" button's design
+
+## 2019-08-09
+
+* Fixed "/robots.txt" endpoint regression
+
+## 2019-08-05
+
+* Fixed content area activating prematurely on hover
+* Added delete confirmation to page settings dialog
+* SEO tools: fixed arbitrary page's URL being displayed
+* Improved content area styling
+* General improvements
+
+## 2019-07-31
+
+* New SEO dashboard
+* New redesigned page settings dialog
+* Re-designed content area management
+* API: Sitemap control via [Site API](https://www.voog.com/developers/api/resources/site)
+* API: Support generic search for [Pages API](https://www.voog.com/developers/api/resources/pages) (`?search=somecontent`)
+* Updated prices for the 2019 hike
+* Added advanced redirect rules support
+* Added [Redirect Rules API](https://www.voog.com/developers/api/resources/redirect_rules)
+
 ## 2019-07-04
 
 * Add `menu_title` to the Page object. It's now possible to set a separate `page.menu_title` to display a different title in the menu, as opposed to the `<title>` tag. [`menuitem.title`](https://www.voog.com/developers/markup/objects/menu-item#menuitem_title) now returns `page.menu_title` when present, with fallback to `page.title`. The `menu_title` value can be updated over the [Page API](https://www.voog.com/developers/api/resources/pages).
