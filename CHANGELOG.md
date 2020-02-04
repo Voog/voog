@@ -1,5 +1,79 @@
 # Changelog
 
+## 2020-02-03
+
+* Added a separate help menu to Dashboard
+* Fixed broken "+" button in toolbar menus (blog, user, site)
+* Various Dashboard and toolbar fixes
+* Changed HTML editor and trashcan positioning in line with the new toolbar
+
+## 2020-01-29
+
+* Introduced the main menu redesign
+* Improved Dashboard loading and UI
+* Set Dashboard as the post-login landing page
+* Fixed a restored page not re-appearing in SEO Pages listing
+* Voog support chat is now also visible off-hours
+* API: Fixed Products API for the case when all site languages have been deleted
+* API: Do not include the `locations` section to Products API responses to anonymous requests
+* API: Improved Ecommerce API documentation about [anonymous endpoints](https://www.voog.com/developers/api#anonymous_access)
+* Ecommerce: Fixed status update for orders in paginated views
+* General code and system improvements
+
+## 2020-01-07
+
+* Added a link to SEO admin views to Dashboard
+
+## 2019-12-20
+
+* Introduced a new Dashboard view
+
+## 2019-12-12
+
+* Added a new application server node
+
+## 2019-11-29
+
+* Reduced site structure management view reloads
+* Fixed adding a buy button for editors in Standard and Plus plans
+* General code and system improvements
+
+## 2019-11-20
+
+* Improved Let's Encrypt SSL certificates management and stability
+* Improved loading semi-modal dialogs
+* Fixed page deletion flash messages
+* General code and system improvements
+
+## 2019-11-12
+
+* Fixed and improved UX/UI of SEO admin views
+* API: Fixed HTTP/500 response in Pages API when a link-type page received `null` for `layout_id`
+* Reduced JS bundle sizes
+* General code and system improvements
+
+## 2019-11-06
+
+* Added redesigned article settings dialog
+* Added redesigned elements settings dialog
+* Ecommerce: Support additional MakeCommerce payment methods (Finora, Slice and mTasku)
+* Support older browsers without Shadow DOM support (e.g. IE11)
+* Improved content draghandler
+
+## 2019-10-10
+
+* Made content area toolbar z-index higher than overlay and its popover
+* Fixed page OG image removal
+* Updated recurring payment period copy in subscriptions view
+* Ecommerce: Send weekly transactions report e-mail to shop owners (shops with a transaction fee only)
+* General code and system improvements
+
+## 2019-10-03
+
+* Migrated client-facing map widgets to Google Embed API
+* Fixed saving site title in SEO General view
+* Fixed content area manipulation UI z-indices
+
 ## 2019-10-01
 
 * Fixed issue where the page settings dialog always displayed "public" as password protected state
