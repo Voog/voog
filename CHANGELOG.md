@@ -1,5 +1,53 @@
 # Changelog
 
+## 2020-04-04
+
+* Ecommerce: Added support for minimum cart amount requirement.
+* Ecommerce: Added capability to make buy buttons publicly unavailable (pause shopping).
+* Ecommerce: Fixed order notification e-mail reply-to addresses. Use customer's e-mail in notifications to the shop owner and shop e-mail in notifications to the customer.
+* Ecommerce: Enabled `terms_agreement_required` flag by default on new store creation.
+* Ecommerce: Show 50 records per page in orders and products views.
+* Ecommerce: Added tooltip to discount amount field.
+* Ecommerce: Allow up to 1 MB of text in the shipping method options field.
+* Ecommerce API: Added `is_publicly_unavailable` and `min_cart_total` to [Store Settings API](https://www.voog.com/developers/api/ecommerce/store_settings).
+
+## 2020-03-27
+
+* Fixed asset collection list ordering in file picker toolbar.
+
+## 2020-03-26
+
+* Redesigned the file picker toolbar.
+* Fixed chat icon positioning in admin catalog view.
+
+## 2020-03-23
+
+* API: Fixed article draft / publishing / published status update logic.
+* API: Fixed Elements and Articles authorization - elements and articles of password protected pages are now readable and updatable.
+* Fixed issue where [plain text content](https://www.voog.com/developers/markup/tags/content#single) was converted to rich text on page duplication.
+
+## 2020-03-13
+
+* Improved auto-SSL features.
+
+## 2020-03-11
+
+* Ecommerce: Shopping cart data are now stored in browser `localStorage`.
+* Ecommerce: Improved buy button performance when selecting an existing product.
+* API: Allow deletion of restricted API objects (i.e. features not enabled in the current subscription plan).
+* General code and system improvements.
+
+## 2020-03-05
+
+* General code and system improvements.
+
+## 2020-02-26
+
+* Fixed page reload and redirection on page update and delete via the semi-modal dialog.
+* Automatically provision Let's Encrypt SSL certificates for newly added domains (sites with stock designs only).
+* Force SSL for domains with recently activated certificates (sites with stock designs only).
+* General code and system improvements.
+
 ## 2020-02-03
 
 * Added a separate help menu to Dashboard
