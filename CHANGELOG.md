@@ -1,5 +1,32 @@
 # Changelog
 
+## 2020-04-20
+
+* Ecommerce: Store and show the external gateway transactio ID as `gateway_transaction_id` field in [Orders API](https://www.voog.com/developers/api/ecommerce/orders) response.
+
+## 2020-04-16
+
+* Ecommerce: Support translatable shipping methods (`name` and `description` fields).
+
+## 2020-04-15
+
+* Ecommerce: Fixed shopping cart views and totals calculation if `Voog.ShoppingCart.showCart` is invoked externally.
+* Ecommerce: Added the `language_id` field to the `page` object of [Elements API](https://www.voog.com/developers/api/resources/elements) response.
+* Ecommerce: Added the `sku` and `parent_id` fields to the `product` object of [Orders API](https://www.voog.com/developers/api/ecommerce/orders) response.
+
+## 2020-04-13
+
+* Use the `email` input type for e-mail fields in the form content area.
+* Ecommerce: Fixed cart totals calculation.
+
+## 2020-04-09
+
+* Fixed saving boolean flags in domain settings.
+* Ecommerce: Improved buy button rendering in edit mode.
+* Ecommerce: Separated payment and shipping statuses in order filtering.
+* Ecommerce: Show quantity of a product in order details mobile view.
+* Ecommerce: Add more tooltips to store settings.
+
 ## 2020-04-04
 
 * Ecommerce: Added support for minimum cart amount requirement.
