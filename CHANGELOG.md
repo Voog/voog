@@ -1,5 +1,36 @@
 # Changelog
 
+## 2020-05-11
+
+* Ecommerce: Clean stale cache on discount object update.
+* General code and copy improvements.
+
+## 2020-05-08
+
+* Ecommerce: Added [Stripe payment gateway](https://stripe.com/checkout) support. Stripe supports Apple Pay and Google Pay out of the box.
+* Show a label next to form tickets marked as spam.
+
+## 2020-05-07
+
+* Ecommerce API: Added the [Webhooks API](https://www.voog.com/developers/api/ecommerce/webhooks). Supported object: `order`. Supported events: `create`, `update` and `delete`. [Read more](https://www.voog.com/developers/api/ecommerce/webhooks).
+* Added the `form_submit_input` class to form submit buttons.
+* Retain image format when generating thumbnails. Previously the `medium` size was always saved as JPEG.
+* General code and system improvements.
+
+## 2020-05-04
+
+* Ecommerce: Improved payment gateway notification processing and retry stability.
+
+## 2020-04-28
+
+* Password protected pages invitation emails are sent out in the page language instead of the inviting user's language, if the language is supported.
+* Ecommerce: Keep product information attached to buy buttons on page duplication.
+* General code and system improvements.
+
+## 2020-04-27
+
+* Ecommerce: Fixed a bug related to updating shipping methods.
+
 ## 2020-04-20
 
 * Ecommerce: Store and show the external gateway transactio ID as `gateway_transaction_id` field in [Orders API](https://www.voog.com/developers/api/ecommerce/orders) response.
