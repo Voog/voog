@@ -1,5 +1,29 @@
 # Changelog
 
+## 2020-06-01
+
+* Ecommerce: Use different color if the order status is unpaid or not_dispatched.
+* Liquid: Fixed [contentblock](https://www.voog.com/developers/markup/tags/contentblock#publish_default_content) regression where `publish_default_content` value was ignored.
+
+## 2020-05-28
+
+* Liquid: Added `buy_button` and `buy_buttons` support to the [`load`](https://www.voog.com/developers/markup/tags/load) tag.
+* Liquid: Added the [buy_button](https://www.voog.com/developers/markup/objects/buy-button), [content](https://www.voog.com/developers/markup/objects/content) and [product](https://www.voog.com/developers/markup/objects/product) objects.
+* Ecommerce: Fixed Luminor logos in shopping carts for the LT and LV regions.
+* Ecommerce: Support dynamic shipping pricing (e.g. free shipping or reduced shipping cost for orders over a given total amount).
+* API: Added Ecommerce [Cart rules API](https://www.voog.com/developers/api/ecommerce/cart_rules).
+
+## 2020-05-25
+
+* Ecommerce: Show separate payment and shipping statuses in orders view.
+* Ecommerce: Added [Luminor E-Commerce payment gateway](https://www.luminor.ee/en/business/luminors-e-commerce-gateway).
+
+## 2020-05-13
+
+* Ecommerce: Updated payment method logos
+* Ecommerce: Added notification language option to store settings and [Store settings API](https://www.voog.com/developers/api/ecommerce/store_settings).
+* Ecommerce: Send store admin e-mails in notification language
+
 ## 2020-05-11
 
 * Ecommerce: Clean stale cache on discount object update.
