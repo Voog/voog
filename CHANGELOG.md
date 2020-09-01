@@ -1,5 +1,44 @@
 # Changelog
 
+## 2020-08-31
+* Ecommerce: Add [EveryPay](https://every-pay.com/) payment gateway support.
+
+## 2020-08-27
+* Ecommerce: Add e-mail and PDF invoice previews to store settings.
+* Ecommerce: Add support for new Stripe Checkout [payment methods](https://stripe.com/docs/payments/checkout/payment-methods) –
+  * Alipay (China - AUD, CAD, EUR, GBP, HKD, JPY, NZD, SGD, USD, MYR)
+  * Bancontact (Belgium - EUR)
+  * Giropay (Germany - EUR)
+  * EPS (Austria - EUR)
+  * Bacs Direct Debit (UK - GBP)
+  * Przelewy24 (Poland - EUR, PLN)
+  * FPX (Malaysia - MYR)
+
+## 2020-08-12
+* Fix a visual bug in DNS settings view.
+* Improve UI tooltips.
+* Ecommerce: Support customizable customer e-mails and PDF invoices (alpha version – by request only).
+
+## 2020-08-06
+* New look for Voog onboarding e-mails.
+
+## 2020-08-03
+* Ecommerce: Fix shipping method option validation on cart update and checkout.
+
+## 2020-06-29
+* Ecommerce: Integrate delivery providers - auto-updated pick up point and parcel terminal lists for DPD, Itella Smartpost and Omniva.
+* API: Add the `delivery_method` data structure to [Shipping methods API](https://www.voog.com/developers/api/ecommerce/shipping_methods), representing the integrated delivery provider associated with the shipping method.
+
+## 2020-06-16
+* Ecommerce: Reflect shopping cart rule discounts in e-mails.
+
+## 2020-06-14
+* Add [Google reCAPTCHA v3](https://developers.google.com/recaptcha) support for forms (enabled by default).
+* API: Add the `recaptcha` flag to [Forms API](https://www.voog.com/developers/api/resources/forms).
+
+## 2020-06-03
+* Ecommerce: Refresh shopping cart on review.
+
 ## 2020-06-01
 
 * Ecommerce: Use different color if the order status is unpaid or not_dispatched.
