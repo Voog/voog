@@ -1,5 +1,28 @@
 # Changelog
 
+## 2020-09-09
+* Support 4-byte UTF-8 characters (emojis) in content area, article excerpt and body, and element data columns (`text` data type). 4-byte UTF-8 characters are now converted to HTML entities upon save.
+
+## 2020-09-08
+* Performance: Change `Element` and `ElementDefinition` backing data storage and serialization format to improve processing time.
+* General code and copy improvements.
+
+## 2020-09-07
+* Ecommerce: Liquid Drop improvements.
+* Ecommerce: Send e-mails asynchronously.
+* Performance: Reduce size of downloaded JS bundles and improve loading logic for better parallelization.
+* General code and copy improvements.
+
+## 2020-09-16
+* Update design of Voog e-mails.
+
+## 2020-09-08
+* Fix wrong currency code in transaction fee report.
+
+## 2020-09-02
+* Ecommerce: Add `luminor` payment method to EveryPay gateway.
+* Fix product variants settings menu style.
+
 ## 2020-08-31
 * Ecommerce: Add [EveryPay](https://every-pay.com/) payment gateway support.
 
