@@ -1,13 +1,13 @@
 # Changelog
 
-## 2020-09-09
+## 2020-10-09
 * Support 4-byte UTF-8 characters (emojis) in content area, article excerpt and body, and element data columns (`text` data type). 4-byte UTF-8 characters are now converted to HTML entities upon save.
 
-## 2020-09-08
+## 2020-10-08
 * Performance: Change `Element` and `ElementDefinition` backing data storage and serialization format to improve processing time.
 * General code and copy improvements.
 
-## 2020-09-07
+## 2020-10-07
 * Ecommerce: Liquid Drop improvements.
 * Ecommerce: Send e-mails asynchronously.
 * Performance: Reduce size of downloaded JS bundles and improve loading logic for better parallelization.
