@@ -1,5 +1,72 @@
 # Changelog
 
+## 2021-02-10
+* Ecommerce: Add events support to Checkout v2. [Read more](https://www.voog.com/developers/scripting/checkout-flow-v2).
+* Ecommerce: Add product image URL to the CSV and XLS outputs.
+
+
+## 2021-02-09
+* Designs: Initial release of [Nuuk ](https://github.com/Voog/design-nuuk). [See here](https://nuuk.voog.com/) for a demo site.
+
+## 2021-02-09
+* Harmonize heading names in the text editor and the design editor. Add the H4 style.
+* Liquid: Add new attributes to the [menuadd tag](https://www.voog.com/developers/markup/tags/menuadd): `title`, `label`, `layout_title`, `style`, `class`.
+* Liquid: Add [new keys](https://www.voog.com/developers/markup/basics/i18n) for the `lc` and `lce` filters.
+* Ecommerce: Introduce dedicated tablet design for Checkout v2.
+
+## 2021-02-01
+* Ecommerce: Fix sending of stock warning and webhook error notification e-mails.
+
+## 2021-01-27
+* Ecommerce: Add product image support to the admin interface.
+* Ecommerce: Fixes and improvements to checkout flow v2.
+* Ecommerce: Dispatch the `voog:ecommerce:buttonproductsave` event when [buy button](https://www.voog.com/developers/scripting/ecommerce/buy-buttons-manager) settings are saved.
+* Ecommerce: Improve PDF invoice rendering when store's tax rate is zero.
+* Ecommerce: Use store name in customer e-mails' From field.
+* Liquid: Fix `available?` method in the [BuyButton drop](https://www.voog.com/developers/markup/objects/buy-button).
+* Liquid: Fix rendering product JSON.
+* Liquid: Fix rendering translated product names.
+
+## 2021-01-13
+* Ecommerce: Retain orders and products filter state in the respective admin views.
+* Optimize animated GIF thumbnail generation.
+
+## 2020-12-31
+* Introduce HTTP/2 support.
+
+## 2020-12-17
+* Ecommerce: Introduce support for product images.
+* API: Add `image`, `image_id`, `price_min` and `price_max` fields to the [Products API](https://www.voog.com/developers/api/ecommerce/products).
+* API: Add the `image` field to product entries in [Carts ](https://www.voog.com/developers/api/ecommerce/carts) and [Orders](https://www.voog.com/developers/api/ecommerce/orders) APIs.
+* Liquid: Add `image`, `image?`, `price_min`, `price_max`, `price_min_with_tax`,  `price_max_with_tax` and `currency` to the [Product drop](https://www.voog.com/developers/markup/objects/product).
+* Liquid: Add `thumbnail` to the [Image drop](https://www.voog.com/developers/markup/objects/image)
+
+## 2020-12-17
+* Ecommerce: Introduce the new checkout flow (v2, default for new stores).
+* Ecommerce: Improve invoice PDF layout for long content.
+* Fix grid galley thumbnail size calculation.
+
+## 2020-12-09
+* Support `youtube-nocookie.com` as an embedded video URL.
+
+## 2020-12-09
+* Ecommerce: Fix a bug in order status e-mails in case a related discount has been deleted.
+
+## 2020-11-17
+* Add extra information and sorting functionality to the SEO Pages view.
+* API: Add `customer.language` to Ecommerce [Orders API](https://www.voog.com/developers/api/ecommerce/orders) response.
+* Ecommerce: Fix preview text rendering in customer e-mails.
+
+## 2020-11-17
+* Use site domain for page and article OG image URLs.
+
+## 2020-11-05
+* Display 250 entries in SEO Pages view.
+* Update domain price list.
+
+## 2020-10-15
+* Update subjects and preview texts of e-mails sent to the site owner.
+
 ## 2020-10-09
 * Support 4-byte UTF-8 characters (emojis) in content area, article excerpt and body, and element data columns (`text` data type). 4-byte UTF-8 characters are now converted to HTML entities upon save.
 
