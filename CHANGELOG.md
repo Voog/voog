@@ -1,5 +1,45 @@
 # Changelog
 
+## 2021-04-19
+
+* Ecommerce: Add custom fields support to checkout. Configuration is available via [Cart fields API](https://www.voog.com/developers/api/ecommerce/cart_fields).
+* Ecommerce: Fix order creation webhooks failing if the order contains a product with an image.
+* Ecommerce: Deny possible HTML and JS injection to PDF invoice.
+* Remove client's IP address from form tickets and article comments.
+
+## 2021-04-07
+
+* Liquid: Improve menu loading time.
+
+## 2021-04-01
+
+* Add site verification support. A new website is unavailable to the public until site owner verifies it by email.
+
+## 2021-03-29
+
+* Ecommerce: Fix checkout tablet view UI issues.
+* Ecommerce: Amend payment instructions with recipient and description in checkout return view.
+* Ecommerce: Switch shipping and billing address titles in detailed order view.
+* Ecommerce: Defer duplicating shipping address from billing address until final order checkout.
+* Add alt text to wall and slider gallery thumbnails.
+
+## 2021-03-18
+
+* Ecommerce: Apply domain iframe settings to checkout.
+
+## 2021-03-10
+
+* Ecommerce: Set shipping address to selected pick-up point's address, if applicable.
+* Ecommerce: Do not display 0% tax rate row in e-mails.
+
+## 2021-03-05
+
+* Ecommerce: Do not display 0% tax rate row in checkout.
+
+## 2021-02-22
+
+* Fix HTTP/301 redirect rules for language front pages.
+
 ## 2021-02-10
 * Ecommerce: Add events support to Checkout v2. [Read more](https://www.voog.com/developers/scripting/checkout-flow-v2).
 * Ecommerce: Add product image URL to the CSV and XLS outputs.
