@@ -1,5 +1,40 @@
 # Changelog
 
+## 2021-06-03
+
+* Ecommerce: New on-site shopping cart dialog (for v2).
+* Ecommerce: Fix monetary amount rendering for 3-character currency codes in Liquid.
+* Ecommerce: Allow clearing discount validity date fields.
+
+## 2021-05-27
+
+* Ecommerce: Create preview capability for customized shopping cart fields.
+* Ecommerce: Add keyboard navigation to checkout settings and improve focus handling.
+* Ecommerce: Fix product reservation logic on status change.
+* Ecommerce: Fix UX bugs in checkout v2.
+
+## 2021-05-19
+
+* Ecommerce: Enhance checkout fields customization interface.
+* Ecommerce: Display used discount code in admin e-mails.
+* Ecommerce: Fix bug where product's min and max prices were not updated on price change.
+* Ecommerce: Show price on buy button if all variants have the same price.
+
+## 2021-05-04
+
+* Ecommerce: Add admin interface for customizing checkout (v2) fields.
+* Ecommerce: Improve checkout locale handling.
+* Improve assets database indexing.
+
+## 2021-04-23
+
+* Ecommerce: Fix UX bugs in checkout v2.
+
+## 2021-04-20
+
+* Liquid: Add cart related [localization keys](https://www.voog.com/developers/markup/basics/i18n) for the `lc` tag.
+* Ecommerce: Fix bug where shipping method names were not translated in checkout.
+
 ## 2021-04-19
 
 * Ecommerce: Add custom fields support to checkout. Configuration is available via [Cart fields API](https://www.voog.com/developers/api/ecommerce/cart_fields).
