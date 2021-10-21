@@ -1,5 +1,83 @@
 # Changelog
 
+## 2021-10-20
+
+* API: Improve sorting performance over translated product fields in the [Ecommerce Products API](https://www.voog.com/developers/api/ecommerce/products).
+* Sort product list by name after the previous performance improvement. 
+* Ecommerce: Add a noticeable warning for if your store is disabled.
+* General code improvements.
+
+## 2021-10-12
+* Ecommerce: Add a new default Checkout field: the company VAT code. Show it in Checkout views, e-mails, and the PDF invoice if present.
+* Ecommerce: Add contract related warning for Montonio Split and financing.
+* Send domain transfer code e-mail based on user locale.
+* Send .ee registration e-mail based on user locale.
+* General code improvements.
+
+## 2021-10-04
+
+* Ecommerce: Bypass the payment tab in the Checkout if the total amount of the cart is 0.
+* Ecommerce: Display the product code in the order details and on the PDF invoice.
+* Ecommerce: Allow navigation to products related to the order from the order details view.
+* Ecommerce: Add the option to filter orders by customer name and e-mail.
+* Ecommerce: Show product prices in the admin view of the product list.
+* Ecommerce: Improve existing product lookup selection for the buy button modal.
+* Ecommerce: Disallow to archive unprocessed orders (with payment statuses "unpaid" or "pending").
+* Ecommerce: Add IDN support to store reply and notification e-mails.
+* Block bad crawlers in the site's default `robots.txt`.
+
+## 2021-09-20
+
+* Ecommerce: Add [Montonio Split](https://montonio.com/et/montonio-split-tapselt-oige-tasakaal-valjaostu-ja-jarelmaksu-vahel/) support.
+* Ecommerce: Improve the rendering of the product editing form for currency codes unknown to the CMS.
+* Improve the performance of rendering edit mode requests.
+* Improve the accessibility of the support chat in mobile view.
+
+## 2021-09-08
+
+* New: Add [Spanish langage](https://www.voog.com/developers/markup/basics/i18n) support for the website's public interface (Liquid templates, Checkout, Ecommerce customer-related e-mails).
+* Ecommerce: Update PayPal's setup instructions.
+
+## 2021-08-31
+
+* Ecommerce: Fix an issue where the browser autofill function sometimes breaks the checkout flow in the Checkout.
+
+## 2021-08-26
+
+* Update the Voog domains [price list](https://www.voog.com/support/your-website-addresses/domain-prices).
+
+## 2021-08-09
+
+* Ecommerce: Update the VISA logo to match their new [brand](https://merchantsignageeu.visa.com/product.asp?dptID=696).
+
+## 2021-08-03
+
+* API: Update the [Ecommerce Order API](https://www.voog.com/developers/markup/ecommerce-objects/order) documentation.
+* Ecommerce: Fix product image rendering in the on-site shopping cart when the image's file name contains special characters.
+
+## 2021-07-02
+
+* API: Update the [Ecommerce Gateways API](https://www.voog.com/developers/api/ecommerce/gateways) documentation.
+* API: Update the [Assets API](https://www.voog.com/developers/api/resources/assets) documentation. Add a description of the uploading process.
+* Improve the performance of destroying objects.
+
+## 2021-06-28
+
+* Change: Images are now processed asynchronously during upload.
+* API: Add new asset "status" to [Assets API](https://www.voog.com/developers/api/resources/assets).
+* Ecommerce: Display credit-based payment methods in a separate section in the Checkout.
+
+## 2021-06-20
+
+* Ecommerce: Add [Montonio](https://montonio.com/) payment gateway support.
+* Ecommerce: Add the Ecommerce [Templates API](https://www.voog.com/developers/api/ecommerce/templates). Read more about the [customization of the PDF invoice and customer e-mails](https://www.voog.com/developers/markup/basic-examples/ecommerce-templates) in Voog Ecommerce.
+* Liquid: Add documentation for Liquid objects related to the [Ecommerce templates](https://www.voog.com/developers/markup/ecommerce-objects). 
+
+## 2021-06-15
+
+* Ecommerce: Display gross shipping amount in the Checkout's shipping tab.
+* Fix galleries displaying low-quality thumbnails in some cases.
+
 ## 2021-06-03
 
 * Ecommerce: New on-site shopping cart dialog (for v2).
