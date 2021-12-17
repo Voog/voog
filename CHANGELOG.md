@@ -1,5 +1,41 @@
 # Changelog
 
+# 2021-12-16
+
+* Ecommerce: Add the product list content area (product widget).
+* Ecommerce: Add category membership and the description field to the product object.
+* Ecommerce: Improve the platform default (fallback) canonical product page layout.
+* Ecommerce: Add the [Product Widgets API](https://www.voog.com/developers/api/resources/product_widgets).
+* Ecommerce: Update the [Products API](https://www.voog.com/developers/api/ecommerce/products) to support description and category membership management.
+* Liquid: Add the [Product list drop](https://www.voog.com/developers/markup/objects/product-widget).
+* Liquid: Add the [image tag](https://www.voog.com/developers/markup/tags/image).
+* Liquid: Add the [image_data tag](https://www.voog.com/developers/markup/tags/image-data).
+* Liquid: Add the `schemeless_url` method to the [Asset drop](https://www.voog.com/developers/markup/objects/asset).
+* Liquid: Add the `filename` method to the [Image drop](https://www.voog.com/developers/markup/objects/image).
+* Liquid: Add the `product` and `url` methods to the [Product drop](https://www.voog.com/developers/markup/ecommerce-objects/product).
+* Liquid: The [Language drop](https://www.voog.com/developers/markup/objects/language) works as expected in the context of canonical product pages.
+
+## 2021-11-24
+
+* Ecommerce: Add [Kniks gift card](https://kniks.ee/) support to the Makecommerce payment gateway.
+* Ecommerce: Add the product [Categories API](https://www.voog.com/developers/api/ecommerce/categories).
+* Fix signup with emails containing the `+` character.
+
+## 2021-11-17
+
+* Ecommerce: Improve store terms URL validation.
+* Fix an unhandled exception in the catalog editor.
+* Improve finding domains available for purchase.
+
+## 2021-11-05
+
+* Ecommerce: Support more currency symbols.
+* Ecommerce: Inital support for auto-rendered canonical product pages. Introduce a new layout content type `product`.
+* Liquid: Allow binding a [content area](https://www.voog.com/developers/markup/tags/content) to a [Product drop](https://www.voog.com/developers/markup/ecommerce-objects/product).
+* Liquid: Add the [Variant type](https://www.voog.com/developers/markup/ecommerce-objects/product-variant-type) and [Variant value](https://www.voog.com/developers/markup/ecommerce-objects/product-variant-value) drops.
+* Liquid: Add the `variant_values` method to the [Product drop](https://www.voog.com/developers/markup/ecommerce-objects/product), returning an array of [Variant types](https://www.voog.com/developers/markup/ecommerce-objects/product-variant-type).
+* Liquid: Add the `title` method to the [Product drop](https://www.voog.com/developers/markup/ecommerce-objects/product)
+
 ## 2021-10-20
 
 * API: Improve sorting performance over translated product fields in the [Ecommerce Products API](https://www.voog.com/developers/api/ecommerce/products).
