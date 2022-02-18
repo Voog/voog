@@ -1,5 +1,79 @@
 # Changelog
 
+# 2022-02-18
+
+* Promote the new product list content area in the add content area dialog.
+* Liquid: Fix regression where content block without a default value (`{% contentblock %}{% endcontentblock %}`) was not rendered.
+
+# 2022-02-17
+
+* API: Fix a bug when filtering by secondary objects: the filter now only applies to the primary objects, but the secondary objects are left as are.
+* Ecommerce: Fix a bug where only the first 50 categories were displayed in product admin view and product list content area settings.
+* Ecommerce: Add out of stock labels to the product list content area.
+* Ecommerce: Fix URL routing for forms bound to canonical product pages.
+* Ecommerce: Improve description rendering in product list content area.
+* Liquid: Add the [truncate_html](https://www.voog.com/developers/markup/basics/filters#truncate_html) filter.
+* Liquid: Add the [where](https://www.voog.com/developers/markup/basics/filters#where) filter.
+* Liquid: Add the [at_least](https://www.voog.com/developers/markup/basics/filters#at_least) filter.
+* Liquid: Add the [at_most](https://www.voog.com/developers/markup/basics/filters#at_most) filter.
+* Designs: Auto-generated product page layout improvements in all [Voog standard designs](https://github.com/orgs/Voog/repositories?q=design).
+
+# 2022-02-10
+
+* Liquid: Add support for [sd_breadcrumbs](https://www.voog.com/developers/markup/tags/sd-breadcrumbs) to canonical product pages.
+* Ecommerce: Clicking on the product image on a canonical product page in edit mode redirects to product admin view.
+* Ecommerce: Fix content area rendering and relocating on canonical product pages.
+
+# 2022-01-27
+
+* Ecommerce: Add translatable URL slug support to products.
+* Ecommerce: Support customizing store mount point (canonical product pages' root) in the site structure.
+* Ecommerce: Support customizing the store slug (`/products/` by default) for the canonical product pages structure.
+* Ecommerce: Support adding products via the product list content area.
+* Ecommerce: Fix issue where rebuilding the product variant martrix was triggered unnecessarily.
+* Ecommerce: Fix [webhook](https://www.voog.com/developers/api/ecommerce/webhooks) redirection handling.
+* Ecommerce: Improve canonical product page's fallback design.
+* Ecommerce: Make small enhancements to product list content area settings.
+* Liquid: Add anchor tag class (`link-class`) support to the [menulink](https://www.voog.com/developers/markup/tags/menulink) tag.
+* Liquid: Fix issue where variables where not evaluated in the [menulink](https://www.voog.com/developers/markup/tags/menulink) tag.
+* Block some additional malicious bots in default robots.txt.
+* Allow images in the `/photos/` directory to be indexed by crawlers by default.
+
+# 2022-01-12
+
+* API: Fix language context for [Products API](https://www.voog.com/developers/api/ecommerce/products) requests.
+* Ecommerce: Display draft products in product list content area in edit mode.
+
+# 2022-01-07
+
+* Designs: Add design-specific canonical product page layouts (`content_type: "product"`) to all [Voog standard designs](https://github.com/orgs/Voog/repositories?q=design).
+
+# 2022-01-07
+
+* Ecommerce: Allow deleting a product even if it is bound to a buy button.
+* Ecommerce: Improvements to canonical product page's buy button.
+
+# 2021-12-31
+
+* Ecommerce: Add the product count property to product list content area settings.
+* Ecommerce: Add a direct link to the products admin view to product list content area settings.
+* Ecommerce: Add the canonical product page to the Locations tab in product admin view.
+* API: Improve sorting by translatable fields for [products](https://www.voog.com/developers/api/ecommerce/products) and [categories](https://www.voog.com/developers/api/ecommerce/categories).
+* API: Support sorting by translatable fields in [Categories API](https://www.voog.com/developers/api/ecommerce/categories).
+
+# 2021-12-23
+
+* Ecommerce: Add sorting by creation date to product list content area.
+* Ecommerce: Add categories to products list admin view and export files.
+* Liquid: Add support for [Product](https://www.voog.com/developers/markup/ecommerce-objects/product)'s `title` and `description` fields to the [editable](https://www.voog.com/developers/markup/tags/editable) tag.
+* Liquid: Add the [Category](https://www.voog.com/developers/markup/ecommerce-objects/category) object.
+* Liquid: Add the `categories`, `created_at` and `updated_at` methods to the [Product](https://www.voog.com/developers/markup/ecommerce-objects/product) object.
+
+# 2021-12-21
+
+* Ecommerce: Add canonical product page layout support to design editor.
+* Ecommerce: Do not display the column count selector in products content area settings if the list layout is selected.
+
 # 2021-12-16
 
 * Ecommerce: Add the product list content area (product widget).
