@@ -1,5 +1,72 @@
 # Changelog
 
+# 2022-05-03
+
+* Ecommerce: Fix a bug where attempting to check out a cart with nonexistent products failed silently.
+* Ecommerce: Add new payment methods to the [EveryPay payment gateway](https://www.voog.com/support/online-store/everypay-bank-links) (`coop`, `luminor`).
+* Liquid: Add the `title` and `title_tooltip` attributes to the [content ](https://www.voog.com/developers/markup/tags/content) tag.
+* Liquid: Add new [localization keys](https://www.voog.com/developers/markup/basics/i18n) for the `lc` filter.
+* Liquid: Add the `og_image` and `og_image?` properties to the [article](https://www.voog.com/developers/markup/objects/article#article_og_image), [menuitem](https://www.voog.com/developers/markup/objects/menu-item#menuitem_og_image), [page](https://www.voog.com/developers/markup/objects/page#page_og_image) and [product](https://www.voog.com/developers/markup/ecommerce-objects/product#product_og_image) objects.
+
+# 2022-04-19
+
+* Fix slider gallery animations flickering on Safari.
+
+# 2022-04-11
+
+* Ecommerce: Add new payment methods to the [Montonio payment gateway](https://www.voog.com/support/online-store/montonio-bank-links) (`revolut`, `danske`, `alandsbanken`, `handelsbanken`, `omasaastopankki`, `poppankki`, `saastopankki`, `spankki`).
+
+# 2022-04-06
+
+* Liquid: Allow the `@` symbol in the [menulink](https://www.voog.com/developers/markup/tags/menulink) tag.
+* Improve menu items' reordering in mobile views.
+
+# 2022-03-31
+
+* Liquid: Do not escape `content single="text"` [content](https://www.voog.com/developers/markup/tags/content#single) output by default.
+
+# 2022-03-29
+
+* Improve .ee domain registration process.
+
+# 2022-03-24
+
+* Ecommerce: Add [Swedbank payment gateway](https://www.voog.com/support/online-store/swedbank-payment-gateway).
+* Ecommerce: Don't display the product filter if there are no items in a product list content area.
+* Ecommerce: Fix a bug where the checkout flow became stuck if a time input field was used.
+
+# 2022-03-23
+
+* Ecommerce: Add mobile layout options for product list content area's grid view.
+* Ecommerce: Fix product list content area's effective locale in edit mode.
+
+# 2022-03-21
+
+* Ecommerce: Support deleting a product via the product list content area.
+* Ecommerce: Fix the "New product" link in the product list content area.
+* Ecommerce: Improve filtering for [Products API](https://www.voog.com/developers/api/ecommerce/products) export formats.
+* Internal on-site search now respects the [`robots`](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag) meta tag and page's / site's "Visible to search engines" settings.
+
+# 2022-03-15
+
+* Ecommerce: Set product list content area's default sort order to newest first.
+* Fix redirection after successful login to a password protected page.
+
+# 2022-03-10
+
+* Designs: Improve auto-generated product pages in stock designs.
+
+# 2022-03-07
+
+* Ecommerce: Add filtering by category to product list admin view.
+* Ecommerce: Add product filtering to the product list content area.
+
+# 2022-03-02
+
+* Ecommerce: Generate product slug translations from name by default.
+* Ecommerce: Fix store mountpoint path caching.
+* Liquid: Improve [image tag](https://www.voog.com/developers/markup/tags/image)'s `sizes` attribute.
+
 # 2022-02-18
 
 * Promote the new product list content area in the add content area dialog.
