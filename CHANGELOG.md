@@ -1,5 +1,62 @@
 # Changelog
 
+## 2022-09-21
+
+* Ecommerce: Introduce bulk management of product variants.
+* Ecommerce: Improve product management admin view UX.
+* Ecommerce: Fix product variants' price range calculation.
+* Improve design customization flow.
+* Fix buttons of semi-modal dialogs to the bottom of the screen on wide viewports.
+
+## 2022-09-15
+
+* Allow manually refreshing a Let's Encrypt SSL certificate 7 days before expiration.
+* Ecommerce: Improve product management admin view UX.
+
+## 2022-09-06
+
+* Create link with the file name on dragging and dropping a file into the text editor.
+* Improve Let's Encrypt certificate renewal process.
+
+## 2022-08-31
+
+* Ecommerce: Fix category handling in product settings admin view.
+
+## 2022-08-31
+
+* Fix gallery lightbox displaying low-quality images on zoom.
+* Show warning in edit mode if page is redirected.
+* Fix month selection in date pickers.
+* Add a pay by link option to the offline payment e-mail when updating Voog subscription plan.
+
+## 2022-08-29
+
+* Add Google [reCAPTCHA v3](https://developers.google.com/recaptcha) support for article comments (enabled by default).
+* API: Add the `recaptcha` flag to [Articles API](https://www.voog.com/developers/api/resources/articles#create_article).
+* API: Add the `g-recaptcha-response` parameter to [Comments API](https://www.voog.com/developers/api/resources/comments#create_comment).
+* Ecommerce: Improve product management admin view UX.
+* Liquid: Add new [translation keys](https://www.voog.com/developers/markup/basics/i18n) for the [lc](https://www.voog.com/developers/markup/basics/filters#lc) filter.
+* Improve domain redirect loop detection.
+
+## 2022-08-25
+
+* Ecommerce: Fix handling of Swedbank payment gateway notifications.
+
+## 2022-08-18
+
+* Change password protected page user invitation e-mail copy.
+* Support IDN e-mails in the login form.
+* Block some additional malicious bots in default `robots.txt`.
+
+## 2022-08-09
+
+* Ecommerce: Improve product management admin view UX.
+* Fix page and article settings OG image picker for mobile devices.
+
+## 2022-07-28
+
+* Ecommerce: Introduce the new products management admin view.
+
 ## 2022-07-01
 
 * Introduce the new login view.
