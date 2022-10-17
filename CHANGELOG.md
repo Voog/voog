@@ -2,18 +2,18 @@
 
 ## 2022-10-13
 
-* Add Lithuanian support for end users (Liquid translations, forms, cart, checkout, e-commerce customer emails).
-* Add search box for owned sites to admin dashboard.
-* Ecommerce: Add "Next/Prevous" navigation buttons to product management edit view.
-* Ecommerce: Restore ability to see booked products and variants in products edit view
-* Ecommerce: Fix error where product status change was resetting other fields changes.
-* Ecommetce: Fix tax amount presentation in orders export files when product and shipping tax are different.
-* Liquid: Fixed [customstyle](https://www.voog.com/developers/markup/tags/customstyle) tag to support only valid CSS variables (starting with `--`).
+* Add Lithuanian support for end users ([Liquid translations](https://www.voog.com/developers/markup/basics/i18n), forms, cart, checkout, Ecommerce customer e-mails).
+* Add search by domain name to the dashboard.
+* Ecommerce: Implement navigating to the previous or next product in the product settings admin view.
+* Ecommerce: Restore displaying the number of booked products and variants in product settings admin view.
+* Ecommerce: Fix error where changing the product's status reset changes to other fields in product settings admin view.
+* Ecommerce: Fix tax amount calculation in orders' export formats in the case where product and shipping tax rates differ.
+* Liquid: Fix the [customstyle](https://www.voog.com/developers/markup/tags/customstyle) tag to only allow valid CSS variables (starting with `--`).
 
 ## 2022-09-29
 
-* Ecommerce: Remember per page setting swt by the user in products management list.
-* Improve modal closing with `ESC` key.
+* Ecommerce: Remember the number of items per page in product management admin view.
+* Improve keyboard accessibility by allowing modal and semi-modal dialogs to be closed by pressing the Escape key.
 
 ## 2022-09-21
 
