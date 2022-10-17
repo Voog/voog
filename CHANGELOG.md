@@ -1,5 +1,20 @@
 # Changelog
 
+## 2022-10-13
+
+* Add Lithuanian support for end users (Liquid translations, forms, cart, checkout, e-commerce customer emails).
+* Add search box for owned sites to admin dashboard.
+* Ecommerce: Add "Next/Prevous" navigation buttons to product management edit view.
+* Ecommerce: Restore ability to see booked products and variants in products edit view
+* Ecommerce: Fix error where product status change was resetting other fields changes.
+* Ecommetce: Fix tax amount presentation in orders export files when product and shipping tax are different.
+* Liquid: Fixed [customstyle](https://www.voog.com/developers/markup/tags/customstyle) tag to support only valid CSS variables (starting with `--`).
+
+## 2022-09-29
+
+* Ecommerce: Remember per page setting swt by the user in products management list.
+* Improve modal closing with `ESC` key.
+
 ## 2022-09-21
 
 * Ecommerce: Introduce bulk management of product variants.
