@@ -1,5 +1,49 @@
 # Changelog
 
+## 2022-11-17
+
+* Ecommerce: Improve discount code visibility in checkout flow.
+* Ecommerce: Product management admin view improvements
+
+## 2022-11-16
+
+* Voog subscriptions: Show Apple Pay logo in checkout.
+* General security improvements.
+
+## 2022-11-09
+
+* Fix error when the front page of unknown language is requested.
+
+## 2022-11-02
+
+* Fix restoring layout assets in the design editor.
+* Add price hike notification to the plans admin view.
+
+## 2022-10-30
+
+* Add a global price hike notification banner.
+
+## 2022-10-28
+
+* Ecommerce: Add the catalogue layout to the product list content area.
+* Ecommerce: Fix canonical product pages returning a HTTP/404 error if the front page type is "blog" or "elements".
+* Ecommerce: Fix regression where the maximum number of decimal places after the separator was 2 instead of 4 in product and product variant prices.
+* Ecommerce: Clarify help text for the option to disable buy buttons in store settings admin view.
+* Ecommerce: Do not allow an invalid currency code in store settings admin view.
+* Voog subscriptions: Always send an e-mail to the customer if PDF invoice has been selected as the payment option.
+* Refine the help menu.
+
+## 2022-10-20
+
+* Ecommerce: Add the masonry layout to the product list content area.
+* Ecommerce: Change copy of customer notification e-mails to not assume physical products.
+* Voog subscriptions: Add Apple Pay support.
+
+## 2022-10-19
+
+* Ecommerce: Fix bug where the checkout summary and order details admin view failed to load if a custom checkout field had not been filled in by the customer.
+* Preserve selected text when dragging and dropping a file into the text editor.
+
 ## 2022-10-13
 
 * Add Lithuanian support for end users ([Liquid translations](https://www.voog.com/developers/markup/basics/i18n), forms, cart, checkout, Ecommerce customer e-mails).
