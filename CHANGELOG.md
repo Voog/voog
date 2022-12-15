@@ -1,5 +1,32 @@
 # Changelog
 
+## 2022-12-14
+
+* API: Add [bulk update](https://www.voog.com/developers/api/ecommerce/products#bulk_update_products) and [bulk delete](https://www.voog.com/developers/api/ecommerce/products#bulk_delete_products) support to Products API.
+* Ecommerce: Implement bulk update and bulk delete in the products listing admin view.
+
+## 2022-12-07
+
+* Ecommerce: Add a dialog for translating products and their variants to the product details admin view.
+* Ecommerce: Add presets with predefined delivery methods to the shipping settings admin view.
+
+## 2022-12-01
+
+* Display a one-time confirmation dialog in map content areas before loading Google Maps to ensure GDPR compliance.
+
+## 2022-11-30
+
+* Ecommerce: Introduce the redesigned shipping settings admin view.
+* Ecommerce: Allow reordering variant types and variant values in the product details admin view.
+* Ecommerce: Fix error on saving Swedbank payment gateway settings.
+* Fix asset URLs in exported site snapshot.
+
+## 2022-11-24
+
+* Ecommerce: Show number of available products upon receiving a quantity exceeded error in the shopping cart.
+* Ecommerce: Save product variant types and display the resulting variants immediately on editing a variant type in the product details admin view.
+* Optimize JS bundles.
+
 ## 2022-11-17
 
 * Ecommerce: Improve discount code visibility in checkout flow.
