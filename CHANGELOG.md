@@ -1,5 +1,74 @@
 # Changelog
 
+## 2023-02-10
+
+* Ecommerce: Add delivery provider integration for Itella Smartpost.
+* Ecommerce: Add Latvian and Lithuanian parcel machine list support to Itella Smatpost.
+* Ecommerce: Add PDF invoice bulk download support to the orders listing admin view.
+* Ecommerce: The export of products and orders takes into account bulk selections.
+* Ecommerce: Update credit card logos.
+
+## 2023-02-08
+
+* API: Add PDF invoice bulk download support to the [Orders API](https://www.voog.com/developers/api/ecommerce/orders#download_invoices).
+
+## 2023-02-06
+
+* Ecommerce: Refine the user experience of orders' admin views.
+* Ecommerce: Add bulk update capabilities to the orders listing admin view.
+
+## 2023-02-01
+
+* API: Introduce the [Delivery Provider Configurations](https://www.voog.com/developers/api/ecommerce/delivery_provider_configurations) and [Shipments APIs](https://www.voog.com/developers/api/ecommerce/shipments) for integrating orders with delivery providers, including PDF package label queries.
+* Ecommerce: Add configuring delivery provider integrations to the shipping settings admin view.
+* Ecommerce: Add delivery provider integrations for Omniva.
+* Ecommerce: Enable printing package labels in the order details admin view for orders whose shipping method is integrated with a delivery provider.
+
+## 2023-01-26
+
+* Fix a bug where external link menu entries would not allow the `!` character in their URLs.
+* Signup: Resolve an error that prevented completing the sign-up in Firefox Strict mode.
+* API: Add bulk update capabilities to the [Orders API](https://www.voog.com/developers/api/ecommerce/orders#bulk_update_orders).
+* API / Liquid: Enable filtering articles by tag (using the `q.tag.X` [query filter](https://www.voog.com/developers/api/basics/filters) syntax) for the [Articles API](https://www.voog.com/developers/api/resources/articles#filter) and the [load](https://www.voog.com/developers/markup/tags/load) tag.
+
+## 2023-01-18
+
+* Ecommerce: Fix a bug where updating a product via its buy button could overwrite its translations.
+
+## 2023-01-16
+
+* Ecommerce: Various enhancements to orders' admin views.
+
+## 2023-01-10
+
+* Ecommerce: Improve translating categories in the product details admin view.
+
+
+## 2023-01-04
+
+* Ecommerce: Address various regressions in orders' admin views.
+* Ecommerce: Resolve an error that prevented checkout completion when all shipping methods were disabled.
+
+
+## 2022-12-27
+
+* Ecommerce: Introduce a redesigned orders listing admin view.
+* Ecommerce: Implement translating categories in the product details admin view.
+
+## 2022-12-21
+
+* Fix a bug in the site verification view.
+
+## 2022-12-20
+
+* Introduce a redesigned sign-up view.
+* Ecommerce: Fix untranslated shipping methods in checkout.
+
+## 2022-12-15
+
+* Ecommerce: Enhance products listing admin view's bulk update interface.
+
+
 ## 2022-12-14
 
 * API: Add [bulk update](https://www.voog.com/developers/api/ecommerce/products#bulk_update_products) and [bulk delete](https://www.voog.com/developers/api/ecommerce/products#bulk_delete_products) support to Products API.
