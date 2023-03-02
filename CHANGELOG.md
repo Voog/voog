@@ -1,5 +1,32 @@
 # Changelog
 
+## 2023-03-01
+
+- Ecommerce: Send order data to enabled delivery provider automatically after successful payment.
+- Ecommerce: Indicate orders with package labels in the orders listing admin view.
+
+## 2023-02-24
+
+- Ecommerce: Fix consigning orders to Omniva.
+
+## 2023-02-21
+
+- Ecommerce: Improve delivery configuration UX in the shipping settings admin view.
+
+## 2023-02-17
+
+- Ecommerce: Introduce exporting package labels in bulk to the orders listing admin view.
+
+## 2023-02-16
+
+- API: Support downloading package labels in bulk via [Orders API](https://www.voog.com/developers/api/ecommerce/orders#download_invoices).
+- Ecommerce: Fix displaying SVG product images in checkout.
+- Ecommerce: Display product name in the expected language in the on-site shopping cart after adding it from the product list content area.
+
+## 2023-02-13
+
+- Ecommerce: Do not display the discount row in the order details admin view if a discount code has been entered, but no discount applies.
+
 ## 2023-02-10
 
 * Ecommerce: Add delivery provider integration for Itella Smartpost.
