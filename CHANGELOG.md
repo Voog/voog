@@ -1,5 +1,46 @@
 # Changelog
 
+## 2023-04-06
+
+- Fix scrolling in Checkout, Signup, and Login views when using older iOS versions.
+- Present sitemap.xml as a [sitemap index file](https://developers.google.com/search/docs/crawling-indexing/sitemaps/large-sitemaps) referring to sitemap files for each type (pages, articles, products).
+- Ecommerce: Add search engine indexing control for canonical product pages.
+- Ecommerce: Include canonical product pages in the sitemap and allow controlling inclusion in the SEO admin view.
+- Ecommerce: Improve checkout's payment tab's UX.
+- Ecommerce: Allow limiting available countries in checkout.
+- Ecommerce: Hide checkout's shipping tab if no enabled shipping methods available.
+- Ecommerce: Improve mobile navigation in store admin views.
+- Ecommerce: Improve paid label visibility in Order views.
+- Ecommerce: Improve product list content area's catalogue view's UX.
+- Ecommerce: Improve product detalis admin view preview button behavior.
+- Ecommerce: Fix Stripe payment gateway integration for new Stripe accounts.
+
+## 2023-03-24
+
+- Ecommerce: Fix issues with the EveryPay payment provider if signed up with Swedbank.
+- Ecommerce: Add support for new EveryPay payment methods: `medicinos`, `revolut`, `siauliu`.
+- Ecommerce: Do not allow checking out a cart if a non-applicable discount code is in use.
+
+## 2023-03-22
+
+- Ecommerce: Add support for updating more order attributes via the [Orders API](https://www.voog.com/developers/api/ecommerce/orders#update_order).
+- Ecommerce: Show shipment tracking code in the order details admin view.
+- Ecommerce: Fix error when modifying the VAT code field in checkout settings admin view.
+
+## 2023-03-20
+
+- Ecommerce: Improve UX of products' and orders' bulk editors.
+- Ecommerce: Add support for environment-specific delivery provider credentials in shipping settings admin view.
+- Ecommerce: Fix a regression in checkout preview.
+- Ecommerce: Fix issue where order contents were displayed in the wrong language in checkout result.
+
+## 2023-03-08
+
+- Prevent form submission when form is removed from page.
+- Ecommerce: Fix admin fonts fallback when user has required fonts installed.
+- Ecommerce: Improve order presentation in order details admin view.
+- Ecommerce: Enhance UX for system fields in checkout settings admin view.
+
 ## 2023-03-01
 
 - Ecommerce: Send order data to enabled delivery provider automatically after successful payment.
