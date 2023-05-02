@@ -1,5 +1,28 @@
 # Changelog
 
+## 2023-04-28
+
+- Ecommerce: Implement editing order details.
+- Ecommerce: Implement order package label regeneration.
+- Ecommerce: Add MakeCommerce payment methods (`siauliu`, `revolut`, `indivy-go`, `moki`, `moki3`, `bigbank`).
+- Ecommerce: Update Montonio payment method icons.
+- Ecommerce: Enhance shipping method selection performance in checkout.
+
+## 2023-04-25
+
+- Liquid: Add support for loading product list content areas via the [load](https://www.voog.com/developers/markup/tags/load) tag.
+- Improve default language selection UX in the admin interface.
+- Fix an HTML escaping issue in the form ticket e-mail.
+
+## 2023-04-19
+
+- Add canonical product pages to website export snapshot.
+
+## 2023-04-10
+
+- Ecommerce: Support numeric custom fields in checkout.
+- Ecommerce: Fix a regression resulting in incorrect product inventory when updating order status.
+
 ## 2023-04-06
 
 - Fix scrolling in Checkout, Signup, and Login views when using older iOS versions.
