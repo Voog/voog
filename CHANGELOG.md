@@ -1,5 +1,25 @@
 # Changelog
 
+## 2023-05-18
+
+- Ecommerce: Add physical properties (width, height, length, weight) to the [Products API](https://www.voog.com/developers/api/ecommerce/products), [Liquid](https://www.voog.com/developers/markup/ecommerce-objects/product), product details admin view and the products bulk editor.
+- Ecommerce: Add DPD delivery integration.
+
+## 2023-05-09
+
+- Fix an issue where the Save button did not commit changes from the [background picker](https://www.voog.com/developers/scripting/javascripts/bgpicker).
+- Relocate the "Add New Site" button to the top of the Dashboard.
+
+## 2023-05-05
+
+- Ecommerce: Fix the payment processing service to not expect uppercase currency codes.
+
+## 2023-05-03
+
+- Include canonical product pages in on-site search results.
+- Various improvements to on-site search indexing.
+- API: Introduce a new `product` type for the [Search API](https://www.voog.com/developers/api/resources/search).
+
 ## 2023-04-28
 
 - Ecommerce: Implement editing order details.
