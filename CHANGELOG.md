@@ -1,5 +1,20 @@
 # Changelog
 
+## 2023-06-06
+
+- Ecommerce: Introduce a new top-level store settings admin view.
+- Ecommerce: Fix an bug in Makecommerce payment flow.
+
+## 2023-06-02
+
+- API: Introduce a new [Carts API index endpoint](https://www.voog.com/developers/api/ecommerce/carts#list_carts).
+- Ecommerce: Trigger site indexing on various changes to the store.
+- Enhance the page and product image picker with a collections filter and direct upload functionality.
+
+## 2023-05-26
+
+- API: Enable reordering payment types (`preferred_payment_types`) in checkout via the [Store settings API](https://www.voog.com/developers/api/ecommerce/store_settings#update_settings).
+
 ## 2023-05-18
 
 - Ecommerce: Add physical properties (width, height, length, weight) to the [Products API](https://www.voog.com/developers/api/ecommerce/products), [Liquid](https://www.voog.com/developers/markup/ecommerce-objects/product), product details admin view and the products bulk editor.
