@@ -1,5 +1,69 @@
 # Changelog
 
+## 2023-10-11
+
+- Ecommerce: Redesign discount management admin views.
+- Ecommerce: Display product SKU in emails.
+- API: Add pagination support and new fields (`orders_count`, `redeemable`) to the [Discounts API](https://www.voog.com/developers/api/ecommerce/discounts).
+- Liquid: Fix a bug converting `site.menuitems` to JSON.
+
+## 2023-10-06
+
+- Liquid: Add the `lookup_page_id` and `lookup_path_prefix` parameters to the [`editable`](https://www.voog.com/developers/markup/tags/editable) tag for use with element relation fields.
+- Liquid: Add the optional `values` parameter to the [`addbutton`](https://www.voog.com/developers/markup/tags/addbutton) tag for pre-filling fields at element creation.
+
+## 2023-09-24
+
+- Ecommerce: Introduce sale price management, including support for sale price in buy buttons, on-site shopping cart, checkout, product list content areas, and canonical product pages.
+- API: Add fields related to sale price management (`sale_price`, `effective_price`, `effective_price_min`, `effective_price_max`, `on_sale`) to the [Products API](https://www.voog.com/developers/api/ecommerce/products).
+- Liquid: Add new fields to the [Discount object](https://www.voog.com/developers/markup/ecommerce-objects/discount).
+- Liquid: Add new fields to the [Product object](https://www.voog.com/developers/markup/ecommerce-objects/product).
+- Liquid: Add new fields to the [Product List object](https://www.voog.com/developers/markup/objects/product-widget).
+- Liquid: Add the `discount` field to the [Order Item object](https://www.voog.com/developers/markup/ecommerce-objects/order-item).
+
+## 2023-09-20
+
+- Ecommerce: Improve cart field management for multilingual sites.
+- Ecommerce: Implement product duplication.
+- API: Add the [duplicate](https://www.voog.com/developers/api/ecommerce/products#duplicate_product) action to Products API.
+- Fix the schema portion in site snapshot and orders export URLs.
+
+## 2023-09-13
+
+- Forms: Fix styling not being applied to new form fields until the page was reloaded.
+- Ecommerce: Fix product title not displayed in the correct language in the on-site shopping cart.
+
+## 2023-09-06
+
+- Ecommerce: Redesign the email previews admin view.
+
+## 2023-09-05
+
+- Publish the redesigned [Voog Developers](https://www.voog.com/developers) documentation section.
+
+## 2023-08-14
+
+- Ecommerce: Enhance resolving category slug conflicts and transliterate non-Latin characters for slugs.
+
+## 2023-08-03
+
+- Ecommerce: Enhance store availability management in the store settings admin view.
+- Ecommerce: Make various fixes to the checkout flow.
+- Signup: Fix language selection.
+
+## 2023-06-30
+
+- Ecommerce: Redesign the store settings admin interface.
+
+## 2023-06-27
+
+- Allow users to remove their account from the site.
+
+## 2023-06-14
+
+- Ecommerce: Fix legacy shopping cart (v1) failure if selected shipping method's description is `null`.
+- Liquid: Add the [`sd_product`](https://www.voog.com/developers/markup/tags/sd-product) tag.
+
 ## 2023-06-06
 
 - Ecommerce: Introduce a new top-level store settings admin view.
