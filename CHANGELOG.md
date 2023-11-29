@@ -1,5 +1,38 @@
 # Changelog
 
+## 2023-11-29
+
+- Designs: Introduced new barebones theme for developers – [Wellington](https://github.com/Voog/design-wellington).
+
+## 2023-11-27
+
+- Ecommerce: Support multiple product assets in the admin interface, [Products API](https://www.voog.com/developers/api/ecommerce/products) and [Liquid](https://www.voog.com/developers/markup/ecommerce-objects/product) and in the canonical product page fallback
+design.
+- Liquid: Add the [`assets`](https://www.voog.com/developers/markup/ecommerce-objects/product#product_assets) and [`photos`](https://www.voog.com/developers/markup/ecommerce-objects/product#product_photos) methods to the [Product object](https://www.voog.com/developers/markup/ecommerce-objects/product).
+- Liquid: Product [`image`](https://www.voog.com/developers/markup/ecommerce-objects/product#product_image) now returns an [Asset](https://www.voog.com/developers/markup/objects/asset) instead of an [Image](https://www.voog.com/developers/markup/objects/image).
+- Liquid: Add the [`gallery`](https://www.voog.com/developers/markup/tags/gallery) tag.
+- Liquid: `page.path` now returns the full path of the request in context of the custom 404 layout.
+
+## 2023-11-09
+
+- Fix domain purchase failure when the TLD did not include a 1Y period.
+
+## 2023-11-07
+
+- Ecommerce: Implement filtering orders by discount codes.
+- Ecommerce: Implement exporting discounts as XLSX (optionally with associated orders).
+- Ecommerce: Combine bulk exported shipping labels into a single PDF.
+- Ecommerce: Include canonical product page content areas in the [Contents API](https://www.voog.com/developers/api/resources/contents).
+- Liquid: Fix `title` tag rendering in custom 404 layouts.
+
+## 2023-11-13
+
+- Ecommerce: Update MakeCommerce payment method icons.
+
+## 2023-10-22
+
+- Liquid: Add `content_type` to the [Asset object](https://www.voog.com/developers/markup/objects/asset#asset_content_type).
+
 ## 2023-10-11
 
 - Ecommerce: Redesign discount management admin views.
