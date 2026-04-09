@@ -1,5 +1,111 @@
 # Changelog
 
+## 2024-05-28
+
+- General code and system improvements.
+
+## 2024-05-17
+
+- Ecommerce: Disabled adding Luminor payment gateway.
+- Ecommerce: Fixed "No options" text displaying in checkout.
+- General code and system improvements.
+
+## 2024-04-26
+
+- API: Added public ticket creation endpoint for [Tickets API](https://www.voog.com/developers/api/resources/tickets).
+- API: Added form creation endpoint for [Forms API](https://www.voog.com/developers/api/resources/forms).
+- Ecommerce: Fixed reading product prices in cart returning `NaN`.
+- Fixed search indexing for sites where `robots.txt` contains `?`.
+- General code and system improvements.
+
+## 2024-04-18
+
+- Ecommerce: Added Inbank Hire Purchase support for MakeCommerce gateway.
+- Ecommerce: Fixed checkout when cart total is `0`.
+- General code and system improvements.
+
+## 2024-04-09
+
+- Ecommerce: Added Voog Pay inline card widget for faster payments (including Apple Pay, Google Pay).
+- Ecommerce: Fixed payment method grouping when only Voog Pay is active.
+- General code and system improvements.
+
+## 2024-03-25
+
+- Ecommerce: Added Voog Pay payment provider support.
+- Ecommerce: Renamed "Offline" payment method to "Invoice".
+- Ecommerce: Fixed finding allowed payment methods in cart.
+- General code and system improvements.
+
+## 2024-03-06
+
+- API: Fixed discount application for carts index action.
+
+## 2024-02-28
+
+- Ecommerce: Redesigned payment provider management UI.
+- Fixed article publishing via admin panel.
+- Added trial site banner with signup URL.
+- Added `noindex` HTTP header to trial sites.
+- Improved request staggering for multiple consecutive API calls.
+- Ecommerce: Improved store products indexing.
+
+## 2024-02-19
+
+- Ecommerce: Added support for overwriting products by SKU in import.
+- Ecommerce: Updated Montonio financing icons and added new financing methods.
+- Ecommerce: Fixed product content creation and moving via API.
+- Ecommerce: Fixed shipping cost rule rounding.
+- Ecommerce: Fixed product price ranges update when all variants are draft.
+- Fixed missing translations in ecommerce admin.
+- General code and system improvements.
+
+## 2024-02-08
+
+- Ecommerce: Added product `og_description` support to import/export.
+- Ecommerce: Removed `public_key` from Swedbank gateway configuration.
+- Updated domain price list.
+- General code and system improvements.
+
+## 2024-01-31
+
+- Ecommerce: Added SEO section to product admin view with `og_image`, `og_description`, `title_format`, and `robots_header` fields.
+- API: Added `seo` include option to [Products API](https://www.voog.com/developers/api/ecommerce/products) (`includes=seo`).
+- Liquid: Added `og_description` as alias to article and page drops.
+- Ecommerce: Added support for `all` status in orders filtering.
+- General code and system improvements.
+
+## 2024-01-18
+
+- Ecommerce: Added product bulk import feature with CSV, XLSX, and ODS file support.
+- API: New [Products Import API](https://www.voog.com/developers/api/ecommerce/products_imports) with mapping auto-detection, progress tracking, and notification emails.
+- Ecommerce: Added support for importing categories, variants, and dimensions (limited to 10,000 rows).
+- Ecommerce: Improved product export. New read only "Row type". Variant "Price" and "Sale price" are now real values (empty if not set or override vale) fallback to product price if not set. Added "Variant SKU" column for easier mapping.
+
+## 2024-01-11
+
+- Ecommerce: Improved product list widget with multi-asset support, product modal, secondary image hover, and variant selection.
+- General code and system improvements.
+
+## 2023-12-20
+
+- Added support for WebP images in Assets and LayoutAssets.
+- API: Fixed draft articles being included in public articles API response.
+
+## 2023-12-13
+
+- Liquid: Added new built-in [translations keys](https://www.voog.com/developers/markup/basics/i18n).
+
+## 2023-12-04
+
+- Disabled browser auto-translate (`translate="no"`) in edit mode.
+- Updated Twitter logo to X in social sharing areas.
+
+## 2023-11-30
+
+- Fixed language view rendering for custom languages.
+- Ecommerce: Fixed displaying shipping discount in ecommerce emails.
+
 ## 2023-11-29
 
 - Designs: Introduced new barebones theme for developers – [Wellington](https://github.com/Voog/design-wellington).
