@@ -1,7 +1,117 @@
 # Changelog
 
+## 2026-03-27
+
+- Ecommerce: Added product sitemap URLs for all published languages instead of only the default language.
+- Ecommerce: Fixed virtual parent URLs of canonical product pages returning `HTTP/404`; they now redirect to the store's product listing page with `HTTP/302`.
+- General code and system improvements.
+
+## 2026-03-18
+
+- Fixed the edit mode toolbar obstructing page content.
+
+## 2026-03-17
+
+- Ecommerce: Fixed shipping-price rounding in stores using tax-inclusive price entry.
+- General code and system improvements.
+
+## 2026-03-10
+
+- API: Added `design_assets_cache_ttl` to the [Site API](https://www.voog.com/developers/api/resources/site) for controlling custom design asset cache duration in seconds.
+- Liquid: Added [`static_asset_url`](https://www.voog.com/developers/markup/tags/static-asset-url) tag for versioned static library URLs and [`site.static_asset_version`](https://www.voog.com/developers/markup/objects/site) for reading the current version.
+- Ecommerce: EveryPay payment gateway related improvements.
+- General code, system and security improvements.
+
+## 2026-03-09
+
+- Integrations: Added a setup wizard for creating an Erply account from the integrations admin view.
+- General code and system improvements.
+
+## 2026-03-06
+
+- Ecommerce: Added marketing consent fields and custom CSS classes to checkout settings.
+- API: Added `marketing_consent` field type and `classname` attribute to the [Cart Fields API](https://www.voog.com/developers/api/ecommerce/cart_fields).
+- API: Added `customer.consent` and `customer.marketing_consents` to the [Carts API](https://www.voog.com/developers/api/ecommerce/carts) and [Orders API](https://www.voog.com/developers/api/ecommerce/orders).
+- General code and system improvements.
+
+## 2026-03-04
+
+- Domains: Improved domains AI suggestions.
+
+## 2026-03-03
+
+- Ecommerce: Fixed adding product variants with a price of `0` to the shopping cart.
+- Liquid: Fixed duplicate categories in the [product widget](https://www.voog.com/developers/markup/objects/product-widget) category list.
+- General code and system improvements.
+
+## 2026-02-16
+
+- Ecommerce: Fixed opening checkout before billing and shipping addresses have been entered.
+
+## 2026-02-13
+
+- Ecommerce: Added an option to combine discount codes with product sale prices.
+- API: Added `stackable` to the [Discounts API](https://www.voog.com/developers/api/ecommerce/discounts); when enabled, discount codes apply to sale prices instead of regular prices.
+- API: Added `shipping_original_total_amount` to the [Carts API](https://www.voog.com/developers/api/ecommerce/carts) and [Orders API](https://www.voog.com/developers/api/ecommerce/orders), and `effective_price` to order items.
+- Liquid: Added `stackable?` to the [discount](https://www.voog.com/developers/markup/ecommerce-objects/discount) object, `sale_price_discount_amount` and `sale_price_discount_applies?` to the [order item](https://www.voog.com/developers/markup/ecommerce-objects/order-item) object, and `total_sale_price_discount_amount` to the [order](https://www.voog.com/developers/markup/ecommerce-objects/order) object.
+- General code and system improvements.
+
+## 2026-02-12
+
+- Liquid: Added `product_categories` and `product_categories_as_hash` to the [product widget](https://www.voog.com/developers/markup/objects/product-widget), with category data attributes in product list content areas.
+
+## 2026-01-30
+
+- Fixed removing links from gallery images.
+
+## 2026-01-29
+
+- Forms: Added an initial contact status setting to Mailchimp integrations, supporting `subscribed`, `unsubscribed`, `pending` and `transactional`.
+- Added domain renewals to the domain cart, accessible from the domains list.
+- General code and system improvements.
+
+## 2026-01-28
+
+- UI: Redesigned the domains list to show SSL status, expiry, pricing and DNS availability together.
+- General code and system improvements.
+
+## 2026-01-23
+
+- Ecommerce: Fixed preserving customer details, addresses and custom field values when recreating a shopping cart that can no longer be updated.
+- General code and system improvements.
+
+## 2026-01-22
+
+- Added yearly subscription selection to the domain cart, including eligible free-domain offers.
+- Added domain activation status and registration links to the payment confirmation dialog.
+- General code and system improvements.
+
+## 2026-01-16
+
+- Added a domain cart for reviewing multiple domain purchases and their total before checkout.
+- API: Added `total_discount_amount` to the [Carts API](https://www.voog.com/developers/api/ecommerce/carts) and [Orders API](https://www.voog.com/developers/api/ecommerce/orders).
+- Liquid: Added `total_discount_amount` to the [order](https://www.voog.com/developers/markup/ecommerce-objects/order) object.
+- Ecommerce: Fixed tax-inclusive fixed-amount discount calculations, including carts with mixed tax rates.
+- General code and system improvements.
+
+## 2026-01-08
+
+- Added similar domain suggestions to domain search results.
+- API: Added `page_language` to form ticket payloads in the [Webhooks API](https://www.voog.com/developers/api/resources/webhooks).
+
+## 2026-01-07
+
+- Ecommerce: Fixed minimum order total validation in the on-site shopping cart.
+- General code and system improvements.
+
 ## 2026-01-06
 
+- Ecommerce: Added tax-inclusive price entry for products and shipping methods in stores using the shopping cart v2; previously prices were entered excluding tax.
+- Ecommerce: Added a choice between tax-exclusive and tax-inclusive amounts for fixed discounts.
+- API: Added `price_entry_mode` and `PUT /admin/api/ecommerce/v1/settings/switch_price_entry_mode` to the [Store Settings API.](https://www.voog.com/developers/api/ecommerce/store_settings)
+- API: Added `amount_mode` (`net` or `gross`) to the [Discounts API](https://www.voog.com/developers/api/ecommerce/discounts) for fixed-amount discounts.
+- Liquid: Added explicit net and gross price aliases, including `price_net` and `price_gross`, to the [product](https://www.voog.com/developers/markup/ecommerce-objects/product) object; `price` continues to return the tax-exclusive amount regardless of the store's price entry mode.
+- Liquid: Added `amount_mode`, `net_amount_mode?` and `gross_amount_mode?` to the [discount](https://www.voog.com/developers/markup/ecommerce-objects/discount) object.
 - Forms: Added input length limits of 2,000 characters for text fields and 16,000 for text areas, with support for a custom `max_length`.
 - Ecommerce: Added support for restoring deleted content areas on product pages.
 - General code, system and security improvements.
