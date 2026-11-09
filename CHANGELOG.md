@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-11-09
+
+- Ecommerce: Added the `allow_outdoor` configuration option to the [Shipping Methods API](https://www.voog.com/developers/api/ecommerce/shipping_methods) to exclude outdoor SmartPosti pickup points.
+- UI: Redesigned the subscription plans view in admin.
+- Fixed opening form tickets containing invalid file attachment values.
+
+## 2026-11-06
+
+- Platform API: Added the [Voog Platform API](https://www.voog.com/developers/api/platform_api) at `https://platform-api.voog.com/v1/accounts/:account_uuid`, making supported Voog CMS and Ecommerce API endpoints accessible by account UUID even when a site's domain is unavailable or redirects. The account UUID is available in Site settings, and optional `Voog-Domain` selects the public domain context for generated site URLs.
+- Platform API: Added the [Accounts API](https://www.voog.com/developers/api/resources/accounts) to retrieve account details, including its UUID, title, primary domain, and public URL.
+- API: Added `Authorization: Bearer` authentication to the [Voog API](https://www.voog.com/developers/api) while retaining `X-API-TOKEN` for compatibility. Deprecated `access_token` query parameter.
+- Forms: Added anonymous form attachment downloads through the [Tickets API](https://www.voog.com/developers/api/resources/tickets#download_ticket_file), using signed download tokens.
+- Domains: Improved the domain purchase cart UX.
+- General code and system improvements.
+
 ## 2026-10-28
 
 - Forms: Improved loading of pages with reCAPTCHA-protected forms by loading reCAPTCHA without blocking page parsing.
