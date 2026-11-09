@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-10-28
+
+- Forms: Improved loading of pages with reCAPTCHA-protected forms by loading reCAPTCHA without blocking page parsing.
+- General code and system improvements.
+
+## 2026-10-22
+
+- Improved the domain cart with editable customer details, discount codes, and a breakdown of discounts, account credit, VAT and the total before checkout.
+- General code and system improvements.
+
+## 2026-10-21
+
+- Forms: Improved screen-reader accessibility with labelled field groups and associated validation errors, and added browser validation for required fields before submission, including forms protected by reCAPTCHA.
+
 ## 2026-10-05
 
 - Domains UI: Added bulk domain search for up to 10 names across selected domain extensions.
