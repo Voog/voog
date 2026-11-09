@@ -1,5 +1,55 @@
 # Changelog
 
+## 2026-05-13
+
+- General code and system improvements.
+
+## 2026-05-05
+
+- Ecommerce: Added checkout validation for required country fields with a configured list of allowed countries.
+- General code and system improvements.
+
+## 2026-04-29
+
+- Feature: Added an "HTML" content block type to edit mode content areas.
+- Feature: Introduced new globally available layout: "Blank layout".
+- API: Added the [Code Partials API](https://www.voog.com/developers/api/resources/code_partials) for reading and updating HTML blocks.
+- API: [Layouts API](https://www.voog.com/developers/api/resources/layouts) introduced new global type ( `application/vnd.voog.design.global+liquid`) for system layouts; the `index` endpoints now support `include_body` parameter.
+- Improved design switching to preserve global layouts and avoid copying unrelated stock design attributes.
+- General code and system improvements.
+
+## 2026-04-27
+
+- Editor: Fixed the cancel button in the text editor's image select dialog.
+- General code and system improvements.
+
+## 2026-04-21
+
+- Editor: Restored the `Ctrl`/`Cmd` + `S` keyboard shortcut for saving changes in edit mode.
+- General code and system improvements.
+
+## 2026-04-14
+
+- Liquid: Fixed cached templates leaking state across pages, affecting `content_block`, `editable`, `addbutton` and `title` tags.
+
+## 2026-04-13
+
+- Improved search indexing performance by skipping non-indexable content and reusing parsed Liquid templates.
+
+## 2026-04-08
+
+- Added a direct link to the files panel from the edit mode sidebar.
+- Fixed design preview images in the design editor.
+- Domains: Prefill the `.ee` domain application form with existing account details.
+- General code and system improvements.
+
+## 2026-04-07
+
+- UI: Redesigned the admin navigation with a collapsible sidebar.
+- UI: Redesigned the admi dashboard.
+- Added the domain cart to the booked-domains overlay.
+- General code and system improvements.
+
 ## 2026-03-27
 
 - Ecommerce: Added product sitemap URLs for all published languages instead of only the default language.
