@@ -1,5 +1,158 @@
 # Changelog
 
+## 2026-10-05
+
+- Domains UI: Added bulk domain search for up to 10 names across selected domain extensions.
+- Domains UI: Added WHOIS lookup for registered domains directly from domain search results.
+- General code and system improvements.
+
+## 2026-10-01
+
+- Domains: Improved domain AI based suggestions.
+
+## 2026-09-29
+
+- Ecommerce: Added controls for customer payment and shipping notifications in store settings.
+- API: Added `notification_settings` to the [Store Settings API](https://www.voog.com/developers/api/ecommerce/store_settings) for managing customer notifications.
+- API: Added `customer_shipping_notification` content type to [Templates API.](https://www.voog.com/developers/api/ecommerce/templates)
+- General code and system improvements.
+
+## 2026-09-25
+
+- API: Added `computed_status` to domain responses to distinguish active, disabled, expiring and pending registration domains ([Domains API](https://www.voog.com/developers/api/resources/domains)).
+- Ecommerce: Added image dimensions and responsive sizing to product widget images to reduce layout shifts and improve loading.
+- General code and system improvements.
+
+## 2026-09-24
+
+- Domains: Improved .ee registration validation process.
+- SSL: Improved automatic Let's Encrypt SSL renewal process.
+
+## 2026-09-16
+
+- Feature: Added a latest articles content area with blog, tag, layout and display options.
+- Fixed an expiring domain appearing twice in the domain cart.
+- General code and system improvements.
+
+## 2026-09-14
+
+- API: Added initial `contents` and `layout_name`, `parent_path` and `language_code` options when creating a page through the [Pages API](https://www.voog.com/developers/api/resources/pages).
+- API: Added support for `content_data` when creating a content block through the [Contents API](https://www.voog.com/developers/api/resources/contents).
+- General code and system improvements.
+
+## 2026-09-08
+
+- Fixed missing cookie consent on checkout pages when enabled for the site.
+- General code and system improvements.
+
+## 2026-09-03
+
+- Ecommerce: Improved keyboard and screen-reader accessibility in checkout and on-site buy buttons.
+- General code and system improvements.
+
+## 2026-08-28
+
+- UI: Improve admin sidebar categorisation.
+- Liquid: Fixed access to page attributes through [menu items](https://www.voog.com/developers/markup/objects/menu-item) when pages are loaded for navigation.
+- General code and system improvements.
+
+## 2026-08-26
+
+- Domains: Added support for purchasing `.lt` domains.
+- General code and system improvements.
+
+## 2026-08-25
+
+- General code, system and security improvements.
+
+## 2026-08-21
+
+- Improved domain purchase by opening the cart automatically when domains have already been added.
+- General code and system improvements.
+
+## 2026-08-13
+
+- Integrations: Added the [booking app](https://www.voog.com/booking-system) to the Voog integration.
+- General code and system improvements.
+
+## 2026-08-06
+
+- New: Added downloadable QR codes for sharing pages and articles from their admin views.
+- General code and system improvements.
+
+## 2026-08-05
+
+- Voog subscriptions: Added the Starter plan.
+- General code and system improvements.
+
+## 2026-07-31
+
+- Editor: Added a canvas editor for full-page code partials in edit mode.
+- General code, system and security improvements.
+
+## 2026-07-30
+
+- Signup: Improved UX by better OAuth and password login sections separation.
+- General code and system improvements.
+
+## 2026-07-29
+
+- Domains UI: Added prices and minimum registration periods to the booked-domains overlay.
+- General code and system improvements.
+
+## 2026-07-24
+
+- Feature: Added built-in cookie consent support.
+- General code and system improvements.
+
+## 2026-07-22
+
+- Integration: Added Erply RAJI chat to the integrations admin view.
+- Corrected period display in admin cart.
+- Signup: Fixed signup without a selected plan.
+- General code and system improvements.
+
+## 2026-07-03
+
+- Domains: Added support for purchasing `.fi` domains, including bundled domain offers.
+- General code and system improvements.
+
+## 2026-07-01
+
+- New: Added Japanese translations for public-facing site content.
+- General code and system improvements.
+
+## 2026-06-25
+
+- Improved gallery loading with lazy-loaded images and corrected Wall gallery sizing.
+
+## 2026-06-18
+
+- New: Added an editable `llms.txt` file in SEO settings, available at `/llms.txt` and through the [Site API](https://www.voog.com/developers/api/resources/site).
+- Design: Added design presets support to [Nuuk design](https://github.com/Voog/design-nuuk).
+- General code and system improvements.
+
+## 2026-06-15
+
+- Fixed domains awaiting registration being shown as expired.
+
+## 2026-06-04
+
+- Ecommerce: Fixed discounted cart item amounts changing when cart quantities are updated.
+- General code and system improvements.
+
+## 2026-05-26
+
+- Added design presets to the design editor and a shortcut to it in the edit mode toolbar.
+- Ecommerce: Fixed editing products through buy buttons unintentionally changing their assets.
+- General code and system improvements.
+
+## 2026-05-21
+
+- Ecommerce: Added Unisend parcel pickup as a delivery method in Estonia, Latvia and Lithuania.
+- Ecommerce: Filtered checkout payment methods by cart amount and currency compatibility.
+- General code and system improvements.
+
 ## 2026-05-13
 
 - General code and system improvements.
