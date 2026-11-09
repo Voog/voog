@@ -1,5 +1,95 @@
 # Changelog
 
+## 2026-01-06
+
+- Forms: Added input length limits of 2,000 characters for text fields and 16,000 for text areas, with support for a custom `max_length`.
+- Ecommerce: Added support for restoring deleted content areas on product pages.
+- General code, system and security improvements.
+
+## 2026-01-02
+
+- Forms: Fixed submissions from pages with advertising tracking parameters containing `*`.
+- Forms: Fixed browser autofill interfering with form submissions.
+- General code and system improvements.
+
+## 2025-12-11
+
+- Domains: Added support for purchasing `.shop` domains.
+- Updated redirect rules to retain incoming query parameters instead of dropping them, with destination values taking priority; regular-expression rules can now capture query strings.
+- General code and system improvements.
+
+## 2025-11-26
+
+- Ecommerce: Fixed existing shopping carts using outdated tax rates after the store's tax rate changes.
+- General code and system improvements.
+
+## 2025-11-14
+
+- Ecommerce: Updated Posti pickup point integration to use the new Pickup Point API.
+- General code and system improvements.
+
+## 2025-11-10
+
+- Integrations: Added Erply support to the integrations admin view for connecting store integrations.
+- General code and system improvements.
+
+## 2025-11-07
+
+- Signup: Added support for carrying selected domains through signup and completing their purchase after site creation.
+- Fixed renewing purchased domains from the domains list.
+- General code and system improvements.
+
+## 2025-10-27
+
+- Ecommerce: Added Liisi 3 and Liisi hire purchase payment methods for MakeCommerce.
+- General code and system improvements.
+
+## 2025-10-27
+
+- Forms: Fixed sorting, filtering and pagination in the forms admin view.
+
+## 2025-10-22
+
+- Ecommerce: Moved Indivy Go from hire purchase to split-payment methods in checkout.
+
+## 2025-10-21
+
+- Editor: Redesigned gallery settings with separate content and design tabs and per-image title and link controls.
+- General code and system improvements.
+
+## 2025-10-10
+
+- API: Increased the maximum layout template size to 1 MB.
+- Forms: Fixed saving the redirect address for successful form submissions.
+- General code and system improvements.
+
+## 2025-10-07
+
+- Editor: Redesigned the image picker with uploads, photo library browsing and stock photo search.
+- General code and system improvements.
+
+## 2025-09-29
+
+- Integrations: Added Zapier to the integrations admin view for form and order workflows.
+- General code and system improvements.
+
+## 2025-09-19
+
+- API: Added `paid`, `cancelled`, `shipped` and `payment_failed` order events to the [Webhooks API](https://www.voog.com/developers/api/resources/webhooks).
+- General code and system improvements.
+
+## 2025-09-17
+
+- Forms: Fixed missing source-page details and visitor IP addresses in form submission integrations.
+- General code and system improvements.
+
+## 2025-09-15
+
+- Integrations: Added an integrations admin view for managing Google Analytics, Google Tag Manager, Meta Pixel, Mailchimp, HubSpot and webhooks.
+- API: Added `source` to the [Webhooks API](https://www.voog.com/developers/api/resources/webhooks), defaulting to `api`; only webhooks with `source` set to `api` or `user` appear in the integrations admin view.
+- Forms: Redesigned form settings in edit mode.
+- General code and system improvements.
+
 ## 2025-09-12
 
 - Liquid: Added rendering of configured Google Analytics, Google Tag Manager and Meta Pixel scripts through the [site](https://www.voog.com/developers/markup/objects/site) object's `stats_header` and `analytics` methods.
