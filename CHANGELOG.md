@@ -1,5 +1,158 @@
 # Changelog
 
+## 2025-09-12
+
+- Liquid: Added rendering of configured Google Analytics, Google Tag Manager and Meta Pixel scripts through the [site](https://www.voog.com/developers/markup/objects/site) object's `stats_header` and `analytics` methods.
+- General code and system improvements.
+
+## 2025-09-11
+
+- Fixed errors when moving files to trash or restoring them if the stored file is unavailable.
+- General code and system improvements.
+
+## 2025-08-29
+
+- Improved drag-and-drop responsiveness in large site structures.
+- General code and system improvements.
+
+## 2025-08-28
+
+- Fixed loading pages in large site structures.
+- General code and system improvements.
+
+## 2025-08-27
+
+- API: Added `content_origin_id` to the [Languages API](https://www.voog.com/developers/api/resources/languages) and [Pages API](https://www.voog.com/developers/api/resources/pages) for copying content from an existing page when creating a language front page or translated page.
+- API: Added a relocation action and `children_count` to the [Nodes API](https://www.voog.com/developers/api/resources/nodes), supporting moves relative to another node or under a new parent.
+- UI: Redesigned the site structure admin view for managing pages, translations and language order.
+- General code and system improvements.
+
+## 2025-08-21
+
+- UI: Updated the visitor map in the statistics admin view to use OpenStreetMap.
+- General code and system improvements.
+
+## 2025-07-30
+
+- Forms: Fixed spam status being recalculated when updating existing submissions.
+- General code and system improvements.
+
+## 2025-07-25
+
+- SSL: Fixed ordering replacement SSL certificates for domains with expiring or expired certificates.
+
+## 2025-07-23
+
+- Forms: Fixed notification email links to open the new submissions admin view, with redirects for links in older emails.
+
+## 2025-07-22
+
+- Ecommerce: Changed the default tax rate for new stores from 22% to 24%; existing stores are unchanged.
+- Ecommerce: Redesigned the reports admin view for transaction totals and period reports.
+- General code and system improvements.
+
+## 2025-06-27
+
+- Forms: Fixed spreadsheet exports for forms with names containing characters unsupported in worksheet titles.
+
+## 2025-06-19
+
+- General code and system improvements.
+
+## 2025-06-17
+
+- UI: Redesigned the referrals admin view for referral links, referred sites and revenue.
+- General code and system improvements.
+
+## 2025-06-10
+
+- UI: Redesigned domain management with separate domain and SSL certificate views.
+- General code and system improvements.
+
+## 2025-05-27
+
+- API: Added favicon upload and deletion actions and the `stats_custom_header` setting to the [Site API](https://www.voog.com/developers/api/resources/site).
+- UI: Redesigned the site settings admin view.
+- General code and system improvements.
+
+## 2025-05-22
+
+- API: Added the `order` target and order payload samples to the general [Webhooks API](https://www.voog.com/developers/api/resources/webhooks).
+- API: Deprecated the separate [Ecommerce Webhooks API](https://www.voog.com/developers/api/ecommerce/webhooks) in favor of the general [Webhooks API](https://www.voog.com/developers/api/resources/webhooks).
+- General code and system improvements.
+
+## 2025-05-16
+
+- Ecommerce: Fixed loading checkout and ecommerce admin views.
+- General code and system improvements.
+
+## 2025-05-16
+
+- Restored account, subscription, domain expiry and storage quota notices in redesigned admin views.
+- General code and system improvements.
+
+## 2025-05-14
+
+- Forms: Added multi-select and bulk deletion to the submissions admin view.
+- API: Added bulk deletion through `DELETE /admin/api/tickets` to the [Tickets API](https://www.voog.com/developers/api/resources/tickets), using `target_ids` and optional filters.
+- General code and system improvements.
+
+## 2025-05-13
+
+- API: Added spam-status updates and filtered spam deletion to the [Tickets API](https://www.voog.com/developers/api/resources/tickets).
+- UI: Redesigned the forms and submissions admin views.
+- General code and system improvements.
+
+## 2025-04-30
+
+- API: Added invitation resending and actions for generating or removing the current user's API token to the [People API](https://www.voog.com/developers/api/resources/people).
+- UI: Redesigned the people admin view for invitations, permissions and profile settings.
+- General code and system improvements.
+
+## 2025-03-31
+
+- General security improvements.
+
+## 2025-03-26
+
+- API: Added `GET /admin/api/free_media` for searching Unsplash and Pexels stock images.
+- General code, system and security improvements.
+
+## 2025-03-20
+
+- Improved site backups to support files larger than 4 GB and archives with more than 65,535 files.
+- General code, system and security improvements.
+
+## 2025-03-14
+
+- General security improvements.
+
+## 2025-03-14
+
+- API: Improved [Webhooks API](https://www.voog.com/developers/api/resources/webhooks) samples to include `account_id` and generate payloads when no submissions exist.
+- General code and system improvements.
+
+## 2025-03-11
+
+- API: Added the [Webhooks API](https://www.voog.com/developers/api/resources/webhooks) for form submissions and ticket `create`, `update` and `delete` events, with sample payloads.
+- General code and system improvements.
+
+## 2025-02-26
+
+- Ecommerce: Renamed Smartpost/Itella to SmartPosti; the delivery provider code remains `itella`.
+- Fixed adding content to otherwise empty content areas when the store is disabled.
+- General code and system improvements.
+
+## 2025-02-19
+
+- Fixed uploaded image dimensions to account for EXIF orientation.
+- General code and system improvements.
+
+## 2025-02-17
+
+- API: Added optional `width` and `height` parameters when creating images through the [Assets API](https://www.voog.com/developers/api/resources/assets), returning those dimensions before upload confirmation.
+- General code and system improvements.
+
 ## 2025-01-17
 
 - Voog subscriptions: Removed `.info` domains from the free-domain offer.
