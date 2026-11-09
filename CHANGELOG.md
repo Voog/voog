@@ -1,5 +1,90 @@
 # Changelog
 
+## 2025-01-17
+
+- Voog subscriptions: Removed `.info` domains from the free-domain offer.
+- General code and system improvements.
+
+## 2025-01-09
+
+- Fixed opening private-page invitation links for site users who are already signed in.
+- General code, system and security improvements.
+
+## 2025-01-06
+
+- Ecommerce: Fixed checkout failing with `HTTP/404` when the saved shopping cart no longer exists by recreating the cart and retrying.
+- General code and system improvements.
+
+## 2024-12-10
+
+- Improved the quality of large image thumbnails.
+
+## 2024-11-26
+
+- Ecommerce: Fixed checkout being triggered again while a request is already in progress.
+- General code and system improvements.
+
+## 2024-10-30
+
+- API: Added comma-separated page IDs in the `page_id` parameter when listing submissions through the [Tickets API](https://www.voog.com/developers/api/resources/tickets).
+- General code and system improvements.
+
+## 2024-09-17
+
+- Ecommerce: Changed the default tax rate for new stores from 20% to 22%; existing stores are unchanged.
+- General code and system improvements.
+
+## 2024-09-15
+
+- API: Added `include_details` support to form creation and update responses in the [Forms API](https://www.voog.com/developers/api/resources/forms).
+- General code and system improvements.
+
+## 2024-09-05
+
+- Voog subscriptions: Fixed displaying fractional tax rates on invoices.
+- General code and system improvements.
+
+## 2024-09-02
+
+- Assets: Updated newly generated image thumbnails to use WebP by default instead of the original image format, except for GIFs.
+- General code and system improvements.
+
+## 2024-08-22
+
+- API: Added invitations, profile updates, ownership changes and user removal to the [People API](https://www.voog.com/developers/api/resources/people).
+- API: Added spreadsheet exports across forms to the [Tickets API](https://www.voog.com/developers/api/resources/tickets).
+- API: Added `image` to [Pages API](https://www.voog.com/developers/api/resources/pages) responses when `include_seo` is enabled.
+- Ecommerce: Fixed insufficient-stock warnings in the original shopping cart.
+- General code and system improvements.
+
+## 2024-08-02
+
+- Fixed generated export files using the wrong language.
+- General code and system improvements.
+
+## 2024-07-29
+
+- Added Google sign-in for login and signup.
+- Ecommerce: Updated DPD pickup point synchronization to use HTTPS.
+- General code and system improvements.
+
+## 2024-07-03
+
+- Liquid: Fixed `empty` checks on lazily loaded article and element collections.
+- General code and system improvements.
+
+## 2024-06-26
+
+- API: Added `GET /admin/api/tickets` for listing submissions across forms, with optional `form_id` or `page_id` filtering, to the [Tickets API](https://www.voog.com/developers/api/resources/tickets).
+- API: Added `page_id` when creating forms and `include_details` for form listings to the [Forms API](https://www.voog.com/developers/api/resources/forms).
+- Improved public blog and catalogue rendering performance by loading article and element collections only when used.
+- General code and system improvements.
+
+## 2024-06-13
+
+- Ecommerce: Fixed clearing search filters in product list content areas.
+- General code and system improvements.
+
 ## 2024-05-28
 
 - General code and system improvements.
