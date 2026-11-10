@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-10
+
+- Fixed subscription plans selection when account currency is not EUR.
+- Ecommerce: Fixed order webhook payload rendering for orders containing product variants.
+
 ## 2026-11-09
 
 - Ecommerce: Added the `allow_outdoor` configuration option to the [Shipping Methods API](https://www.voog.com/developers/api/ecommerce/shipping_methods) to exclude outdoor SmartPosti pickup points.
