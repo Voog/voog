@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-12
+
+- API: Added `registration` progress and `dns_verification` results, including the last check time and warnings, to the [Domains API](https://www.voog.com/developers/api/resources/domains).
+- Added canvas editor support for HTML fragments in HTML blocks, previously available only for full-page HTML.
+- Improved the domains admin view with registration progress, DNS connection status, and warnings.
+- Ecommerce: Fixed Voog Pay loading interfering with the selected payment method at checkout.
+- General code and system improvements.
+
 ## 2026-11-10
 
 - Fixed subscription plans selection when account currency is not EUR.
