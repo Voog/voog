@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-11-19
+
+- API: Added `min_weight`, `max_weight`, and `weight_unit` to the [Shipping Methods API](https://www.voog.com/developers/api/ecommerce/shipping_methods), with `for_weight` filtering by weight in kilograms.
+- API: Added `total_weight`, `weight_unit`, `shipping_required`, and `available_shipping_methods` to the [Carts API](https://www.voog.com/developers/api/ecommerce/carts).
+- Ecommerce: Added weight limits to shipping methods so checkout offers only methods that support the cart's weight.
+- Ecommerce: Improved products saving UX
+- Fixed autosaving after removing content blocks or product buttons.
+
+## 2026-11-17
+
+- API: Improved query filters to include or exclude null values using `$in` and `$not_in`; `null` and `nil` remain literal values for string and text attributes.
+- General code and system improvements.
+
+## 2026-11-16
+
+- Feature: Added support for uploading HTML files as new pages from Site structure, with preview and page settings before saving.
+- Fixed subscription checkout for older sites.
+- General code and system improvements.
+
 ## 2026-11-12
 
 - API: Added `registration` progress and `dns_verification` results, including the last check time and warnings, to the [Domains API](https://www.voog.com/developers/api/resources/domains).
